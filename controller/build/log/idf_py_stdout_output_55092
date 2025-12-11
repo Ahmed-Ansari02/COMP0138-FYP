@@ -1,0 +1,1510 @@
+Command: /Users/ahmedansari/.espressif/python_env/idf6.1_py3.14_env/bin/python /Users/ahmedansari/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-0238DB74 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/controller/build/controller.elf /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/controller/build/bootloader/bootloader.elf -m '/Users/ahmedansari/.espressif/python_env/idf6.1_py3.14_env/bin/python' '/Users/ahmedansari/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6376
+load:0x40078000,len:15900
+ho 0 tail 12 room 4
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (29) boot: ESP-IDF v6.1-dev-450-g286b8cb76d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  1 2025 19:55:27[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (72) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  3 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (85) boot:  4 storage          Unknown data     01 82 00210000 00080000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (95) boot: Defaulting to factory image[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=148a0h ( 84128) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=000248c8 vaddr=3ffb0000 size=03e28h ( 15912) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=000286f8 vaddr=40080000 size=07920h ( 31008) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=57fc8h (360392) map[0m
+[0;32mI (284) esp_image: segment 4: paddr=00087ff0 vaddr=40087920 size=03ee8h ( 16104) load[0m
+[0;32mI (291) esp_image: segment 5: paddr=0008bee0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (298) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (298) boot: Disabling RNG early entropy source...[0m
+[0;32mI (310) cpu_start: Multicore app[0m
+[0;32mI (318) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (318) cpu_start: Pro cpu start user code[0m
+[0;32mI (318) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (320) app_init: Application information:[0m
+[0;32mI (324) app_init: Project name:     controller[0m
+[0;32mI (328) app_init: App version:      1[0m
+[0;32mI (332) app_init: Compile time:     Dec  1 2025 19:55:18[0m
+[0;32mI (337) app_init: ELF file SHA256:  13ace5de3...[0m
+[0;32mI (341) app_init: ESP-IDF:          v6.1-dev-450-g286b8cb76d[0m
+[0;32mI (346) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (350) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (354) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (358) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (364) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (369) heap_init: At 3FFB54E8 len 0002AB18 (170 KiB): DRAM[0m
+[0;32mI (375) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (380) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (385) heap_init: At 4008B808 len 000147F8 (81 KiB): IRAM[0m
+[0;33mW (392) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (404) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;32mI (411) main_task: Started on CPU0[0m
+[0;32mI (421) main_task: Calling app_main()[0m
+[0;32mI (421) CTRL: Setting up calibration scheme...[0m
+[0;32mI (421) CONTROLLER: Calibration Success[0m
+[0;32mI (421) CONTROLLER: Raw: 1046 | Volts: 1006 mV | Temp: 30.5 C | Cmd: 0[0m
+[0;32mI (471) CONTROLLER: ================================================[0m
+[0;32mI (471) CONTROLLER: Loading WASM container from SPIFFS...[0m
+[0;32mI (471) CONTROLLER: ================================================[0m
+[0;32mI (481) CONTROLLER: Opening file: /spiffs/controller.wasm[0m
+[0;32mI (511) CONTROLLER: Starting WASM Control Module...[0m
+[0;32mI (511) CONTROLLER: WASM: Temperature Controller Started[0m
+[0;32mI (511) CONTROLLER: WASM: Target: 50C with +/-1C hysteresis[0m
+[0;32mI (511) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (921) CONTROLLER: Raw: 1055 | Volts: 1014 mV | Temp: 30.7 C | Cmd: 0[0m
+[0;32mI (1421) CONTROLLER: Raw: 1072 | Volts: 1028 mV | Temp: 31.2 C | Cmd: 0[0m
+[0;32mI (1921) CONTROLLER: Raw: 1086 | Volts: 1039 mV | Temp: 31.5 C | Cmd: 0[0m
+[0;32mI (2421) CONTROLLER: Raw: 1095 | Volts: 1047 mV | Temp: 31.7 C | Cmd: 0[0m
+[0;32mI (2921) CONTROLLER: Raw: 1110 | Volts: 1059 mV | Temp: 32.1 C | Cmd: 0[0m
+[0;32mI (3421) CONTROLLER: Raw: 1104 | Volts: 1054 mV | Temp: 31.9 C | Cmd: 0[0m
+[0;32mI (3921) CONTROLLER: Raw: 1133 | Volts: 1078 mV | Temp: 32.7 C | Cmd: 0[0m
+[0;32mI (4421) CONTROLLER: Raw: 1122 | Volts: 1069 mV | Temp: 32.4 C | Cmd: 0[0m
+[0;32mI (4921) CONTROLLER: Raw: 1136 | Volts: 1080 mV | Temp: 32.7 C | Cmd: 0[0m
+[0;32mI (5421) CONTROLLER: Raw: 1152 | Volts: 1094 mV | Temp: 33.2 C | Cmd: 0[0m
+[0;32mI (5921) CONTROLLER: Raw: 1183 | Volts: 1119 mV | Temp: 33.9 C | Cmd: 0[0m
+[0;32mI (6421) CONTROLLER: Raw: 1189 | Volts: 1124 mV | Temp: 34.1 C | Cmd: 0[0m
+[0;32mI (6921) CONTROLLER: Raw: 1185 | Volts: 1121 mV | Temp: 34.0 C | Cmd: 0[0m
+[0;32mI (7421) CONTROLLER: Raw: 1202 | Volts: 1135 mV | Temp: 34.4 C | Cmd: 0[0m
+[0;32mI (7921) CONTROLLER: Raw: 1212 | Volts: 1143 mV | Temp: 34.6 C | Cmd: 0[0m
+[0;32mI (8421) CONTROLLER: Raw: 1229 | Volts: 1157 mV | Temp: 35.1 C | Cmd: 0[0m
+[0;32mI (8921) CONTROLLER: Raw: 1232 | Volts: 1160 mV | Temp: 35.2 C | Cmd: 0[0m
+[0;32mI (9421) CONTROLLER: Raw: 1259 | Volts: 1182 mV | Temp: 35.8 C | Cmd: 0[0m
+[0;32mI (9921) CONTROLLER: Raw: 1271 | Volts: 1192 mV | Temp: 36.1 C | Cmd: 0[0m
+[0;32mI (10421) CONTROLLER: Raw: 1279 | Volts: 1199 mV | Temp: 36.3 C | Cmd: 0[0m
+[0;32mI (10921) CONTROLLER: Raw: 1289 | Volts: 1207 mV | Temp: 36.6 C | Cmd: 0[0m
+[0;32mI (11421) CONTROLLER: Raw: 1305 | Volts: 1220 mV | Temp: 37.0 C | Cmd: 0[0m
+[0;32mI (11921) CONTROLLER: Raw: 1299 | Volts: 1215 mV | Temp: 36.8 C | Cmd: 0[0m
+[0;32mI (12421) CONTROLLER: Raw: 1328 | Volts: 1239 mV | Temp: 37.5 C | Cmd: 0[0m
+[0;32mI (12921) CONTROLLER: Raw: 1314 | Volts: 1228 mV | Temp: 37.2 C | Cmd: 0[0m
+[0;32mI (13421) CONTROLLER: Raw: 1334 | Volts: 1244 mV | Temp: 37.7 C | Cmd: 0[0m
+[0;32mI (13921) CONTROLLER: Raw: 1346 | Volts: 1254 mV | Temp: 38.0 C | Cmd: 0[0m
+[0;32mI (14421) CONTROLLER: Raw: 1379 | Volts: 1281 mV | Temp: 38.8 C | Cmd: 0[0m
+[0;32mI (14921) CONTROLLER: Raw: 1373 | Volts: 1276 mV | Temp: 38.7 C | Cmd: 0[0m
+[0;32mI (15421) CONTROLLER: Raw: 1377 | Volts: 1280 mV | Temp: 38.8 C | Cmd: 0[0m
+[0;32mI (15921) CONTROLLER: Raw: 1395 | Volts: 1294 mV | Temp: 39.2 C | Cmd: 0[0m
+[0;32mI (16421) CONTROLLER: Raw: 1403 | Volts: 1301 mV | Temp: 39.4 C | Cmd: 0[0m
+[0;32mI (16921) CONTROLLER: Raw: 1408 | Volts: 1305 mV | Temp: 39.5 C | Cmd: 0[0m
+[0;32mI (17421) CONTROLLER: Raw: 1424 | Volts: 1318 mV | Temp: 39.9 C | Cmd: 0[0m
+[0;32mI (17921) CONTROLLER: Raw: 1431 | Volts: 1324 mV | Temp: 40.1 C | Cmd: 0[0m
+[0;32mI (18421) CONTROLLER: Raw: 1455 | Volts: 1344 mV | Temp: 40.7 C | Cmd: 0[0m
+[0;32mI (18921) CONTROLLER: Raw: 1447 | Volts: 1337 mV | Temp: 40.5 C | Cmd: 0[0m
+[0;32mI (19421) CONTROLLER: Raw: 1467 | Volts: 1354 mV | Temp: 41.0 C | Cmd: 0[0m
+[0;32mI (19921) CONTROLLER: Raw: 1467 | Volts: 1354 mV | Temp: 41.0 C | Cmd: 0[0m
+[0;32mI (20421) CONTROLLER: Raw: 1480 | Volts: 1365 mV | Temp: 41.4 C | Cmd: 0[0m
+[0;32mI (20921) CONTROLLER: Raw: 1482 | Volts: 1366 mV | Temp: 41.4 C | Cmd: 0[0m
+[0;32mI (21421) CONTROLLER: Raw: 1488 | Volts: 1371 mV | Temp: 41.5 C | Cmd: 0[0m
+[0;32mI (21921) CONTROLLER: Raw: 1513 | Volts: 1392 mV | Temp: 42.2 C | Cmd: 0[0m
+[0;32mI (22421) CONTROLLER: Raw: 1523 | Volts: 1400 mV | Temp: 42.4 C | Cmd: 0[0m
+[0;32mI (22921) CONTROLLER: Raw: 1507 | Volts: 1387 mV | Temp: 42.0 C | Cmd: 0[0m
+[0;32mI (23421) CONTROLLER: Raw: 1527 | Volts: 1404 mV | Temp: 42.5 C | Cmd: 0[0m
+[0;32mI (23921) CONTROLLER: Raw: 1553 | Volts: 1425 mV | Temp: 43.2 C | Cmd: 0[0m
+[0;32mI (24421) CONTROLLER: Raw: 1556 | Volts: 1427 mV | Temp: 43.2 C | Cmd: 0[0m
+[0;32mI (24921) CONTROLLER: Raw: 1556 | Volts: 1427 mV | Temp: 43.2 C | Cmd: 0[0m
+[0;32mI (25421) CONTROLLER: Raw: 1575 | Volts: 1443 mV | Temp: 43.7 C | Cmd: 0[0m
+[0;32mI (25921) CONTROLLER: Raw: 1573 | Volts: 1442 mV | Temp: 43.7 C | Cmd: 0[0m
+[0;32mI (26421) CONTROLLER: Raw: 1585 | Volts: 1451 mV | Temp: 44.0 C | Cmd: 0[0m
+[0;32mI (26921) CONTROLLER: Raw: 1600 | Volts: 1464 mV | Temp: 44.4 C | Cmd: 0[0m
+[0;32mI (27421) CONTROLLER: Raw: 1597 | Volts: 1461 mV | Temp: 44.3 C | Cmd: 0[0m
+[0;32mI (27921) CONTROLLER: Raw: 1600 | Volts: 1464 mV | Temp: 44.4 C | Cmd: 0[0m
+[0;32mI (28421) CONTROLLER: Raw: 1600 | Volts: 1464 mV | Temp: 44.4 C | Cmd: 0[0m
+[0;32mI (28921) CONTROLLER: Raw: 1614 | Volts: 1475 mV | Temp: 44.7 C | Cmd: 0[0m
+[0;32mI (29421) CONTROLLER: Raw: 1631 | Volts: 1489 mV | Temp: 45.1 C | Cmd: 0[0m
+[0;32mI (29921) CONTROLLER: Raw: 1626 | Volts: 1485 mV | Temp: 45.0 C | Cmd: 0[0m
+[0;32mI (30421) CONTROLLER: Raw: 1628 | Volts: 1487 mV | Temp: 45.1 C | Cmd: 0[0m
+[0;32mI (30921) CONTROLLER: Raw: 1641 | Volts: 1498 mV | Temp: 45.4 C | Cmd: 0[0m
+[0;32mI (31421) CONTROLLER: Raw: 1660 | Volts: 1513 mV | Temp: 45.8 C | Cmd: 0[0m
+[0;32mI (31921) CONTROLLER: Raw: 1669 | Volts: 1521 mV | Temp: 46.1 C | Cmd: 0[0m
+[0;32mI (32421) CONTROLLER: Raw: 1659 | Volts: 1513 mV | Temp: 45.8 C | Cmd: 0[0m
+[0;32mI (32921) CONTROLLER: Raw: 1665 | Volts: 1518 mV | Temp: 46.0 C | Cmd: 0[0m
+[0;32mI (33421) CONTROLLER: Raw: 1680 | Volts: 1530 mV | Temp: 46.4 C | Cmd: 0[0m
+[0;32mI (33921) CONTROLLER: Raw: 1682 | Volts: 1532 mV | Temp: 46.4 C | Cmd: 0[0m
+[0;32mI (34421) CONTROLLER: Raw: 1680 | Volts: 1530 mV | Temp: 46.4 C | Cmd: 0[0m
+[0;32mI (34921) CONTROLLER: Raw: 1703 | Volts: 1549 mV | Temp: 46.9 C | Cmd: 0[0m
+[0;32mI (35421) CONTROLLER: Raw: 1711 | Volts: 1556 mV | Temp: 47.2 C | Cmd: 0[0m
+[0;32mI (35921) CONTROLLER: Raw: 1713 | Volts: 1557 mV | Temp: 47.2 C | Cmd: 0[0m
+[0;32mI (36421) CONTROLLER: Raw: 1715 | Volts: 1559 mV | Temp: 47.2 C | Cmd: 0[0m
+[0;32mI (36921) CONTROLLER: Raw: 1727 | Volts: 1569 mV | Temp: 47.5 C | Cmd: 0[0m
+[0;32mI (37421) CONTROLLER: Raw: 1746 | Volts: 1584 mV | Temp: 48.0 C | Cmd: 0[0m
+[0;32mI (37921) CONTROLLER: Raw: 1747 | Volts: 1585 mV | Temp: 48.0 C | Cmd: 0[0m
+[0;32mI (38421) CONTROLLER: Raw: 1744 | Volts: 1583 mV | Temp: 48.0 C | Cmd: 0[0m
+[0;32mI (38921) CONTROLLER: Raw: 1743 | Volts: 1582 mV | Temp: 47.9 C | Cmd: 0[0m
+[0;32mI (39421) CONTROLLER: Raw: 1755 | Volts: 1592 mV | Temp: 48.2 C | Cmd: 0[0m
+[0;32mI (39921) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (40421) CONTROLLER: Raw: 1758 | Volts: 1594 mV | Temp: 48.3 C | Cmd: 0[0m
+[0;32mI (40921) CONTROLLER: Raw: 1770 | Volts: 1604 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (41421) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (41921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (42421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (42921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (43421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (43921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (44421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (44921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (45421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (45921) CONTROLLER: Raw: 1833 | Volts: 1656 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (46421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (46921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (47421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (47921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (48421) CONTROLLER: Raw: 1851 | Volts: 1671 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (48921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (49421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (49921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (50421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (50921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (51421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (51421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (51921) CONTROLLER: Raw: 1862 | Volts: 1680 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (52421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (52921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (53421) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (53921) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (54421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (54921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (55421) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (55921) CONTROLLER: Raw: 1779 | Volts: 1612 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (55921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (56421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (56921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (57421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (57921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (58421) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (58921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (59421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (59921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (60421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (60921) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (61421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (61921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (62421) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (62921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (63421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (63921) CONTROLLER: Raw: 1854 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (64421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (64421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (64921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (65421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (65921) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (66421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (66921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (67421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (67921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (68421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (68921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (69421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (69921) CONTROLLER: Raw: 1773 | Volts: 1607 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (69921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (70421) CONTROLLER: Raw: 1783 | Volts: 1615 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (70921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (71421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (71921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (72421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (72921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (73421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (73921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (74421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (74921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (75421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (75921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (76421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (76921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (77421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (77921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (78421) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (78921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (79421) CONTROLLER: Raw: 1860 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (79921) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (80421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (80421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (80921) CONTROLLER: Raw: 1873 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (81421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (81921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (82421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (82921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (83421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (83921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (84421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (84921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (85421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (85921) CONTROLLER: Raw: 1771 | Volts: 1605 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (85921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (86421) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (86921) CONTROLLER: Raw: 1781 | Volts: 1613 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (87421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (87921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (88421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (88921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (89421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (89921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (90421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (90921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (91421) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (91921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (92421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (92921) CONTROLLER: Raw: 1847 | Volts: 1668 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (93421) CONTROLLER: Raw: 1854 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (93921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (94421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (94921) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (95421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (95921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (95921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (96421) CONTROLLER: Raw: 1871 | Volts: 1688 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (96921) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (97421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (97921) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (98421) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (98921) CONTROLLER: Raw: 1822 | Volts: 1647 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (99421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (99921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (100421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (100921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (101421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (101921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (102421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (102421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (102921) CONTROLLER: Raw: 1771 | Volts: 1605 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (103421) CONTROLLER: Raw: 1772 | Volts: 1606 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (103921) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (104421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (104921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (105421) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (105921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (106421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (106921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (107421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (107921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (108421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (108921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (109421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (109921) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (110421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (110921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (111421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (111921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (112421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (112921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (113421) CONTROLLER: Raw: 1873 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (113421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (113921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (114421) CONTROLLER: Raw: 1862 | Volts: 1680 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (114921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (115421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (115921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (116421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (116921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (117421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (117921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (118421) CONTROLLER: Raw: 1783 | Volts: 1615 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (118421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (118921) CONTROLLER: Raw: 1783 | Volts: 1615 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (119421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (119921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (120421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (120921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (121421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (121921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (122421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (122921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (123421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (123921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (124421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (124921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (125421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (125921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (126421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (126921) CONTROLLER: Raw: 1851 | Volts: 1671 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (127421) CONTROLLER: Raw: 1860 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (127921) CONTROLLER: Raw: 1851 | Volts: 1671 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (128421) CONTROLLER: Raw: 1861 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (128921) CONTROLLER: Raw: 1883 | Volts: 1698 mV | Temp: 51.5 C | Cmd: 0[0m
+[0;32mI (128921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (129421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (129921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (130421) CONTROLLER: Raw: 1851 | Volts: 1671 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (130921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (131421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (131921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (132421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (132921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (133421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (133921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (134421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (134921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (135421) CONTROLLER: Raw: 1774 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (135421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (135921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (136421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (136921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (137421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (137921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (138421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (138921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (139421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (139921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (140421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (140921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (141421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (141921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (142421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (142921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (143421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (143921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (144421) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (144921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (145421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (145421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (145921) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (146421) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (146921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (147421) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (147921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (148421) CONTROLLER: Raw: 1800 | Volts: 1629 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (148921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (149421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (149921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (150421) CONTROLLER: Raw: 1778 | Volts: 1611 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (150421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (150921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (151421) CONTROLLER: Raw: 1782 | Volts: 1614 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (151921) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (152421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (152921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (153421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (153921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (154421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (154921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (155421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (155921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (156421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (156921) CONTROLLER: Raw: 1833 | Volts: 1656 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (157421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (157921) CONTROLLER: Raw: 1849 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (158421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (158921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (159421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (159921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (160421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (160421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (160921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (161421) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (161921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (162421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (162921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (163421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (163921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (164421) CONTROLLER: Raw: 1800 | Volts: 1629 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (164921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (165421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (165921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (166421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (166421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (166921) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (167421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (167921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (168421) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (168921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (169421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (169921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (170421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (170921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (171421) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (171921) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (172421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (172921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (173421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (173921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (174421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (174921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (175421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (175921) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (176421) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (176921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (176921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (177421) CONTROLLER: Raw: 1863 | Volts: 1681 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (177921) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (178421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (178921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (179421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (179921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (180421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (180921) CONTROLLER: Raw: 1800 | Volts: 1629 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (181421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (181921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (182421) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (182921) CONTROLLER: Raw: 1761 | Volts: 1597 mV | Temp: 48.4 C | Cmd: 0[0m
+[0;32mI (182921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (183421) CONTROLLER: Raw: 1778 | Volts: 1611 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (183921) CONTROLLER: Raw: 1781 | Volts: 1613 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (184421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (184921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (185421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (185921) CONTROLLER: Raw: 1796 | Volts: 1626 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (186421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (186921) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (187421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (187921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (188421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (188921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (189421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (189921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (190421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (190921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (191421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (191921) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (192421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (192921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (193421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (193921) CONTROLLER: Raw: 1871 | Volts: 1688 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (193921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (194421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (194921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (195421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (195921) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (196421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (196921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (197421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (197921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (198421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (198921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (199421) CONTROLLER: Raw: 1774 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (199421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (199921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (200421) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (200921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (201421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (201921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (202421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (202921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (203421) CONTROLLER: Raw: 1800 | Volts: 1629 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (203921) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (204421) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (204921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (205421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (205921) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (206421) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (206921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (207421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (207921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (208421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (208921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (208921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (209421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (209921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (210421) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (210921) CONTROLLER: Raw: 1822 | Volts: 1647 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (211421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (211921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (212421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (212921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (213421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (213921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (213921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (214421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (214921) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (215421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (215921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (216421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (216921) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (217421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (217921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (218421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (218921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (219421) CONTROLLER: Raw: 1816 | Volts: 1642 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (219921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (220421) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (220921) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (221421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (221921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (222421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (222921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (222921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (223421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (223921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (224421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (224921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (225421) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (225921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (226421) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (226921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (227421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (227921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (228421) CONTROLLER: Raw: 1777 | Volts: 1610 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (228421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (228921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (229421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (229921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (230421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (230921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (231421) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (231921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (232421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (232921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (233421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (233921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (234421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (234921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (235421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (235921) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (236421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (236921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (237421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (237921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (237921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (238421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (238921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (239421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (239921) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (240421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (240921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (241421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (241921) CONTROLLER: Raw: 1783 | Volts: 1615 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (241921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (242421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (242921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (243421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (243921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (244421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (244921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (245421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (245921) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (246421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (246921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (247421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (247921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (248421) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (248921) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (249421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (249421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (249921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (250421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (250921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (251421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (251921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (252421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (252921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (253421) CONTROLLER: Raw: 1785 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (253921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (254421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (254921) CONTROLLER: Raw: 1755 | Volts: 1592 mV | Temp: 48.2 C | Cmd: 0[0m
+[0;32mI (254921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (255421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (255921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (256421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (256921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (257421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (257921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (258421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (258921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (259421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (259921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (260421) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (260921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (261421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (261921) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (262421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (262921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (263421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (263921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (264421) CONTROLLER: Raw: 1854 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (264921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (264921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (265421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (265921) CONTROLLER: Raw: 1836 | Volts: 1659 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (266421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (266921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (267421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (267921) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (268421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (268921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (269421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (269921) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (270421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (270421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (270921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (271421) CONTROLLER: Raw: 1782 | Volts: 1614 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (271921) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (272421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (272921) CONTROLLER: Raw: 1783 | Volts: 1615 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (273421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (273921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (274421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (274921) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (275421) CONTROLLER: Raw: 1837 | Volts: 1660 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (275921) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (276421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (276921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (277421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (277921) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (278421) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (278921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (279421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (279921) CONTROLLER: Raw: 1863 | Volts: 1681 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (280421) CONTROLLER: Raw: 1870 | Volts: 1687 mV | Temp: 51.1 C | Cmd: 0[0m
+[0;32mI (280421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (280921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (281421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (281921) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (282421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (282921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (283421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (283921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (284421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (284921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (285421) CONTROLLER: Raw: 1771 | Volts: 1605 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (285421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (285921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (286421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (286921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (287421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (287921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (288421) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (288921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (289421) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (289921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (290421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (290921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (291421) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (291921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (292421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (292921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (293421) CONTROLLER: Raw: 1854 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (293921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (294421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (294921) CONTROLLER: Raw: 1871 | Volts: 1688 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (294921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (295421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (295921) CONTROLLER: Raw: 1851 | Volts: 1671 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (296421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (296921) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (297421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (297921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (298421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (298921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (299421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (299921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (300421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (300421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (300921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (301421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (301921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (302421) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (302921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (303421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (303921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (304421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (304921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (305421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (305921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (306421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (306921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (307421) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (307921) CONTROLLER: Raw: 1847 | Volts: 1668 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (308421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (308921) CONTROLLER: Raw: 1867 | Volts: 1684 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (308921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (309421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (309921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (310421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (310921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (311421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (311921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (312421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (312921) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (313421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (313921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (313921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (314421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (314921) CONTROLLER: Raw: 1784 | Volts: 1616 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (315421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (315921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (316421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (316921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (317421) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (317921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (318421) CONTROLLER: Raw: 1796 | Volts: 1626 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (318921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (319421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (319921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (320421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (320921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (321421) CONTROLLER: Raw: 1847 | Volts: 1668 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (321921) CONTROLLER: Raw: 1838 | Volts: 1660 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (322421) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (322921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (323421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (323921) CONTROLLER: Raw: 1862 | Volts: 1680 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (324421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (324421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (324921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (325421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (325921) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (326421) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (326921) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (327421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (327921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (328421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (328921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (329421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (329921) CONTROLLER: Raw: 1781 | Volts: 1613 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (329921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (330421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (330921) CONTROLLER: Raw: 1781 | Volts: 1613 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (331421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (331921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (332421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (332921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (333421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (333921) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (334421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (334921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (335421) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (335921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (336421) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (336921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (337421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (337921) CONTROLLER: Raw: 1860 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (338421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (338921) CONTROLLER: Raw: 1867 | Volts: 1684 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (338921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (339421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (339921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (340421) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (340921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (341421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (341921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (342421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (342921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (343421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (343921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (344421) CONTROLLER: Raw: 1769 | Volts: 1603 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (344421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (344921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (345421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (345921) CONTROLLER: Raw: 1773 | Volts: 1607 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (346421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (346921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (347421) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (347921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (348421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (348921) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (349421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (349921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (350421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (350921) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (351421) CONTROLLER: Raw: 1822 | Volts: 1647 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (351921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (352421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (352921) CONTROLLER: Raw: 1862 | Volts: 1680 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (353421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (353921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (354421) CONTROLLER: Raw: 1875 | Volts: 1691 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (354421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (354921) CONTROLLER: Raw: 1861 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (355421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (355921) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (356421) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (356921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (357421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (357921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (358421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (358921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (359421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (359921) CONTROLLER: Raw: 1772 | Volts: 1606 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (359921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (360421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (360921) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (361421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (361921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (362421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (362921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (363421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (363921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (364421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (364921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (365421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (365921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (366421) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (366921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (367421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (367921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (368421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (368921) CONTROLLER: Raw: 1854 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (369421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (369921) CONTROLLER: Raw: 1873 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (369921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (370421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (370921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (371421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (371921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (372421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (372921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (373421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (373921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (374421) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (374921) CONTROLLER: Raw: 1785 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (375421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (375421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (375921) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (376421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (376921) CONTROLLER: Raw: 1785 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (377421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (377921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (378421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (378921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (379421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (379921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (380421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (380921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (381421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (381921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (382421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (382921) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (383421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (383921) CONTROLLER: Raw: 1864 | Volts: 1682 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (384421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (384921) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (385421) CONTROLLER: Raw: 1871 | Volts: 1688 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (385421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (385921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (386421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (386921) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (387421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (387921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (388421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (388921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (389421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (389921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (390421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (390921) CONTROLLER: Raw: 1765 | Volts: 1600 mV | Temp: 48.5 C | Cmd: 0[0m
+[0;32mI (390921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (391421) CONTROLLER: Raw: 1771 | Volts: 1605 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (391921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (392421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (392921) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (393421) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (393921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (394421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (394921) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (395421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (395921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (396421) CONTROLLER: Raw: 1820 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (396921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (397421) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (397921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (398421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (398921) CONTROLLER: Raw: 1864 | Volts: 1682 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (399421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (399921) CONTROLLER: Raw: 1861 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (400421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (400921) CONTROLLER: Raw: 1861 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (401421) CONTROLLER: Raw: 1884 | Volts: 1698 mV | Temp: 51.5 C | Cmd: 0[0m
+[0;32mI (401421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (401921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (402421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (402921) CONTROLLER: Raw: 1833 | Volts: 1656 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (403421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (403921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (404421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (404921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (405421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (405921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (406421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (406921) CONTROLLER: Raw: 1779 | Volts: 1612 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (406921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (407421) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (407921) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (408421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (408921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (409421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (409921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (410421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (410921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (411421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (411921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (412421) CONTROLLER: Raw: 1833 | Volts: 1656 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (412921) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (413421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (413921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (414421) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (414921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (415421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (415921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (416421) CONTROLLER: Raw: 1854 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (416921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (416921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (417421) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (417921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (418421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (418921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (419421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (419921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (420421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (420921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (421421) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (421921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (422421) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (422921) CONTROLLER: Raw: 1771 | Volts: 1605 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (422921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (423421) CONTROLLER: Raw: 1782 | Volts: 1614 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (423921) CONTROLLER: Raw: 1773 | Volts: 1607 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (424421) CONTROLLER: Raw: 1767 | Volts: 1602 mV | Temp: 48.5 C | Cmd: 0[0m
+[0;32mI (424921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (425421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (425921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (426421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (426921) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (427421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (427921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (428421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (428921) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (429421) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (429921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (430421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (430921) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (431421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (431921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (432421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (432921) CONTROLLER: Raw: 1859 | Volts: 1678 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (433421) CONTROLLER: Raw: 1860 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (433921) CONTROLLER: Raw: 1871 | Volts: 1688 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (433921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (434421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (434921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (435421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (435921) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (436421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (436921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (437421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (437921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (438421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (438921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (439421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (439921) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (440421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (440421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (440921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (441421) CONTROLLER: Raw: 1773 | Volts: 1607 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (441921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (442421) CONTROLLER: Raw: 1779 | Volts: 1612 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (442921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (443421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (443921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (444421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (444921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (445421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (445921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (446421) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (446921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (447421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (447921) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (448421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (448921) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (449421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (449921) CONTROLLER: Raw: 1837 | Volts: 1660 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (450421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (450921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (451421) CONTROLLER: Raw: 1878 | Volts: 1693 mV | Temp: 51.3 C | Cmd: 0[0m
+[0;32mI (451421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (451921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (452421) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (452921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (453421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (453921) CONTROLLER: Raw: 1820 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (454421) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (454921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (455421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (455921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (456421) CONTROLLER: Raw: 1784 | Volts: 1616 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (456421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (456921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (457421) CONTROLLER: Raw: 1781 | Volts: 1613 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (457921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (458421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (458921) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (459421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (459921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (460421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (460921) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (461421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (461921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (462421) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (462921) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (463421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (463921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (464421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (464921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (465421) CONTROLLER: Raw: 1877 | Volts: 1693 mV | Temp: 51.3 C | Cmd: 0[0m
+[0;32mI (465421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (465921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (466421) CONTROLLER: Raw: 1847 | Volts: 1668 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (466921) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (467421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (467921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (468421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (468921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (469421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (469921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (470421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (470921) CONTROLLER: Raw: 1774 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (470921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (471421) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (471921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (472421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (472921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (473421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (473921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (474421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (474921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (475421) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (475921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (476421) CONTROLLER: Raw: 1822 | Volts: 1647 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (476921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (477421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (477921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (478421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (478921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (479421) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (479921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (480421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (480421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (480921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (481421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (481921) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (482421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (482921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (483421) CONTROLLER: Raw: 1816 | Volts: 1642 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (483921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (484421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (484921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (485421) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (485421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (485921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (486421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (486921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (487421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (487921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (488421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (488921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (489421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (489921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (490421) CONTROLLER: Raw: 1816 | Volts: 1642 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (490921) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (491421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (491921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (492421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (492921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (493421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (493921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (494421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (494921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (494921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (495421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (495921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (496421) CONTROLLER: Raw: 1832 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (496921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (497421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (497921) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (498421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (498921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (499421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (499921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (499921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (500421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (500921) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (501421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (501921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (502421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (502921) CONTROLLER: Raw: 1796 | Volts: 1626 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (503421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (503921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (504421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (504921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (505421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (505921) CONTROLLER: Raw: 1833 | Volts: 1656 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (506421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (506921) CONTROLLER: Raw: 1838 | Volts: 1660 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (507421) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (507921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (508421) CONTROLLER: Raw: 1874 | Volts: 1690 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (508421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (508921) CONTROLLER: Raw: 1865 | Volts: 1683 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (509421) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (509921) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (510421) CONTROLLER: Raw: 1837 | Volts: 1660 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (510921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (511421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (511921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (512421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (512921) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (513421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (513921) CONTROLLER: Raw: 1769 | Volts: 1603 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (513921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (514421) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (514921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (515421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (515921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (516421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (516921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (517421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (517921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (518421) CONTROLLER: Raw: 1819 | Volts: 1645 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (518921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (519421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (519921) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (520421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (520921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (521421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (521921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (522421) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (522921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (523421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (523921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (524421) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (524921) CONTROLLER: Raw: 1870 | Volts: 1687 mV | Temp: 51.1 C | Cmd: 0[0m
+[0;32mI (524921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (525421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (525921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (526421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (526921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (527421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (527921) CONTROLLER: Raw: 1822 | Volts: 1647 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (528421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (528921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (529421) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (529921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (530421) CONTROLLER: Raw: 1777 | Volts: 1610 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (530421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (530921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (531421) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (531921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (532421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (532921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (533421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (533921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (534421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (534921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (535421) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (535921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (536421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (536921) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (537421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (537921) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (538421) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (538921) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (539421) CONTROLLER: Raw: 1860 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (539921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (540421) CONTROLLER: Raw: 1862 | Volts: 1680 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (540921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (540921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (541421) CONTROLLER: Raw: 1875 | Volts: 1691 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (541921) CONTROLLER: Raw: 1861 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (542421) CONTROLLER: Raw: 1833 | Volts: 1656 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (542921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (543421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (543921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (544421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (544921) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (545421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (545921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (546421) CONTROLLER: Raw: 1782 | Volts: 1614 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (546421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (546921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (547421) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (547921) CONTROLLER: Raw: 1785 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (548421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (548921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (549421) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (549921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (550421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (550921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (551421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (551921) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (552421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (552921) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (553421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (553921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (554421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (554921) CONTROLLER: Raw: 1861 | Volts: 1679 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (555421) CONTROLLER: Raw: 1867 | Volts: 1684 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (555421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (555921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (556421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (556921) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (557421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (557921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (558421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (558921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (559421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (559921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (560421) CONTROLLER: Raw: 1778 | Volts: 1611 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (560421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (560921) CONTROLLER: Raw: 1777 | Volts: 1610 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (561421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (561921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (562421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (562921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (563421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (563921) CONTROLLER: Raw: 1812 | Volts: 1639 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (564421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (564921) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (565421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (565921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (566421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (566921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (567421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (567921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (568421) CONTROLLER: Raw: 1866 | Volts: 1684 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (568421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (568921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (569421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (569921) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (570421) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (570921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (571421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (571921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (572421) CONTROLLER: Raw: 1783 | Volts: 1615 mV | Temp: 48.9 C | Cmd: 0[0m
+[0;32mI (572421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (572921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (573421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (573921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (574421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (574921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (575421) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (575921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (576421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (576921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (577421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (577921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (578421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (578921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (579421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (579921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (580421) CONTROLLER: Raw: 1863 | Volts: 1681 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (580921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (581421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (581921) CONTROLLER: Raw: 1863 | Volts: 1681 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (582421) CONTROLLER: Raw: 1879 | Volts: 1694 mV | Temp: 51.3 C | Cmd: 0[0m
+[0;32mI (582421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (582921) CONTROLLER: Raw: 1870 | Volts: 1687 mV | Temp: 51.1 C | Cmd: 0[0m
+[0;32mI (583421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (583921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (584421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (584921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (585421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (585921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (586421) CONTROLLER: Raw: 1806 | Volts: 1634 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (586921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (587421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (587921) CONTROLLER: Raw: 1778 | Volts: 1611 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (587921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (588421) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (588921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (589421) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (589921) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (590421) CONTROLLER: Raw: 1814 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (590921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (591421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (591921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (592421) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (592921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (593421) CONTROLLER: Raw: 1846 | Volts: 1667 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (593921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (594421) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (594921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (595421) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (595921) CONTROLLER: Raw: 1870 | Volts: 1687 mV | Temp: 51.1 C | Cmd: 0[0m
+[0;32mI (595921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (596421) CONTROLLER: Raw: 1852 | Volts: 1672 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (596921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (597421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (597921) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (598421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (598921) CONTROLLER: Raw: 1801 | Volts: 1630 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (599421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (599921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (600421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (600921) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (601421) CONTROLLER: Raw: 1774 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (601421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (601921) CONTROLLER: Raw: 1771 | Volts: 1605 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (602421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (602921) CONTROLLER: Raw: 1789 | Volts: 1620 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (603421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (603921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (604421) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (604921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (605421) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (605921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (606421) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (606921) CONTROLLER: Raw: 1825 | Volts: 1650 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (607421) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (607921) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (608421) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (608921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (609421) CONTROLLER: Raw: 1836 | Volts: 1659 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (609921) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (610421) CONTROLLER: Raw: 1835 | Volts: 1658 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (610921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (611421) CONTROLLER: Raw: 1852 | Volts: 1672 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (611921) CONTROLLER: Raw: 1857 | Volts: 1676 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (612421) CONTROLLER: Raw: 1873 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (612421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (612921) CONTROLLER: Raw: 1851 | Volts: 1671 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (613421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (613921) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (614421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (614921) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (615421) CONTROLLER: Raw: 1812 | Volts: 1639 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (615921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (616421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (616921) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (617421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (617921) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (618421) CONTROLLER: Raw: 1773 | Volts: 1607 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (618421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (618921) CONTROLLER: Raw: 1774 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (619421) CONTROLLER: Raw: 1785 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (619921) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (620421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (620921) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (621421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (621921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (622421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (622921) CONTROLLER: Raw: 1818 | Volts: 1644 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (623421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (623921) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (624421) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (624921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (625421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (625921) CONTROLLER: Raw: 1839 | Volts: 1661 mV | Temp: 50.3 C | Cmd: 0[0m
+[0;32mI (626421) CONTROLLER: Raw: 1843 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (626921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (627421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (627921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (628421) CONTROLLER: Raw: 1850 | Volts: 1670 mV | Temp: 50.6 C | Cmd: 0[0m
+[0;32mI (628921) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (629421) CONTROLLER: Raw: 1867 | Volts: 1684 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (629421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (629921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (630421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (630921) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (631421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (631921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (632421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (632921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (633421) CONTROLLER: Raw: 1793 | Volts: 1623 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (633921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (634421) CONTROLLER: Raw: 1786 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (634921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (634921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (635421) CONTROLLER: Raw: 1799 | Volts: 1628 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (635921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (636421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (636921) CONTROLLER: Raw: 1807 | Volts: 1635 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (637421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (637921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (638421) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (638921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (639421) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (639921) CONTROLLER: Raw: 1809 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (640421) CONTROLLER: Raw: 1817 | Volts: 1643 mV | Temp: 49.8 C | Cmd: 0[0m
+[0;32mI (640921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (641421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (641921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (642421) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (642921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (643421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (643921) CONTROLLER: Raw: 1858 | Volts: 1677 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (644421) CONTROLLER: Raw: 1866 | Volts: 1684 mV | Temp: 51.0 C | Cmd: 0[0m
+[0;32mI (644421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (644921) CONTROLLER: Raw: 1841 | Volts: 1663 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (645421) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (645921) CONTROLLER: Raw: 1829 | Volts: 1653 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (646421) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (646921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (647421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (647921) CONTROLLER: Raw: 1796 | Volts: 1626 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (648421) CONTROLLER: Raw: 1791 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (648921) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (649421) CONTROLLER: Raw: 1785 | Volts: 1617 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (649921) CONTROLLER: Raw: 1776 | Volts: 1609 mV | Temp: 48.8 C | Cmd: 0[0m
+[0;32mI (649921) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (650421) CONTROLLER: Raw: 1788 | Volts: 1619 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (650921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (651421) CONTROLLER: Raw: 1808 | Volts: 1636 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (651921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (652421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (652921) CONTROLLER: Raw: 1803 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (653421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (653921) CONTROLLER: Raw: 1795 | Volts: 1625 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (654421) CONTROLLER: Raw: 1798 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (654921) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (655421) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (655921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (656421) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (656921) CONTROLLER: Raw: 1834 | Volts: 1657 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (657421) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (657921) CONTROLLER: Raw: 1842 | Volts: 1664 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (658421) CONTROLLER: Raw: 1845 | Volts: 1666 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (658921) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (658921) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (659421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (659921) CONTROLLER: Raw: 1823 | Volts: 1648 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (660421) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (660921) CONTROLLER: Raw: 1813 | Volts: 1640 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (661421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (661921) CONTROLLER: Raw: 1804 | Volts: 1632 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (662421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (662921) CONTROLLER: Raw: 1792 | Volts: 1622 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (663421) CONTROLLER: Raw: 1802 | Volts: 1631 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (663921) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (664421) CONTROLLER: Raw: 1775 | Volts: 1608 mV | Temp: 48.7 C | Cmd: 0[0m
+[0;32mI (664421) CONTROLLER: WASM: Heater ON - temp below threshold[0m
+[0;32mI (664921) CONTROLLER: Raw: 1769 | Volts: 1603 mV | Temp: 48.6 C | Cmd: 0[0m
+[0;32mI (665421) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (665921) CONTROLLER: Raw: 1794 | Volts: 1624 mV | Temp: 49.2 C | Cmd: 0[0m
+[0;32mI (666421) CONTROLLER: Raw: 1787 | Volts: 1618 mV | Temp: 49.0 C | Cmd: 0[0m
+[0;32mI (666921) CONTROLLER: Raw: 1800 | Volts: 1629 mV | Temp: 49.4 C | Cmd: 0[0m
+[0;32mI (667421) CONTROLLER: Raw: 1790 | Volts: 1621 mV | Temp: 49.1 C | Cmd: 0[0m
+[0;32mI (667921) CONTROLLER: Raw: 1797 | Volts: 1627 mV | Temp: 49.3 C | Cmd: 0[0m
+[0;32mI (668421) CONTROLLER: Raw: 1805 | Volts: 1633 mV | Temp: 49.5 C | Cmd: 0[0m
+[0;32mI (668921) CONTROLLER: Raw: 1810 | Volts: 1637 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (669421) CONTROLLER: Raw: 1815 | Volts: 1641 mV | Temp: 49.7 C | Cmd: 0[0m
+[0;32mI (669921) CONTROLLER: Raw: 1821 | Volts: 1646 mV | Temp: 49.9 C | Cmd: 0[0m
+[0;32mI (670421) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (670921) CONTROLLER: Raw: 1811 | Volts: 1638 mV | Temp: 49.6 C | Cmd: 0[0m
+[0;32mI (671421) CONTROLLER: Raw: 1824 | Volts: 1649 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (671921) CONTROLLER: Raw: 1830 | Volts: 1654 mV | Temp: 50.1 C | Cmd: 0[0m
+[0;32mI (672421) CONTROLLER: Raw: 1826 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (672921) CONTROLLER: Raw: 1853 | Volts: 1673 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (673421) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (673921) CONTROLLER: Raw: 1855 | Volts: 1674 mV | Temp: 50.7 C | Cmd: 0[0m
+[0;32mI (674421) CONTROLLER: Raw: 1856 | Volts: 1675 mV | Temp: 50.8 C | Cmd: 0[0m
+[0;32mI (674921) CONTROLLER: Raw: 1862 | Volts: 1680 mV | Temp: 50.9 C | Cmd: 0[0m
+[0;32mI (675421) CONTROLLER: Raw: 1872 | Volts: 1689 mV | Temp: 51.2 C | Cmd: 0[0m
+[0;32mI (675421) CONTROLLER: WASM: Heater OFF - temp above threshold[0m
+[0;32mI (675921) CONTROLLER: Raw: 1844 | Volts: 1665 mV | Temp: 50.5 C | Cmd: 0[0m
+[0;32mI (676421) CONTROLLER: Raw: 1840 | Volts: 1662 mV | Temp: 50.4 C | Cmd: 0[0m
+[0;32mI (676921) CONTROLLER: Raw: 1827 | Volts: 1651 mV | Temp: 50.0 C | Cmd: 0[0m
+[0;32mI (677421) CONTROLLER: Raw: 1831 | Volts: 1655 mV | Temp: 50.2 C | Cmd: 0[0m
+[0;32mI (677921) CONTROLLER: Raw: 1828 | Volts: 1652 mV | Temp: 50.1 C | Cmd: 0[0m

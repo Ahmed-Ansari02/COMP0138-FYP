@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/CMakeFiles/bootloader
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/CMakeFiles/bootloader.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/CMakeFiles/bootloader-complete.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/WAMR_ESP_32/esp_task_simulation/bridge/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
