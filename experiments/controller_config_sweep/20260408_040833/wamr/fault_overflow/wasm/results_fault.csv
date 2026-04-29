@@ -1,0 +1,2 @@
+fault_index,fault_type,detection_latency_us,recovery_latency_us,temp_at_fault,heap_at_fault,adc_alive,temp_after_recovery,heap_after_recovery,fault_description
+0,2,7024874,100128281,78.94,165868,1,39.00,165648,watchdog_terminated

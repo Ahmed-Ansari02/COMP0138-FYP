@@ -1,0 +1,31 @@
+E (6439) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (6439) task_wdt:  - IDLE0 (CPU 0)
+E (6439) task_wdt: Tasks currently running:
+E (6439) task_wdt: CPU 0: control algorit
+E (6439) task_wdt: CPU 1: IDLE1
+E (6439) task_wdt: Print CPU 0 (current core) backtrace
+
+
+Backtrace: 0x400D803A:0x3FFB10C0 0x400D840C:0x3FFB10E0 0x40082725:0x3FFB1110 0x400D5DAB:0x3FFC2130 0x400D60EA:0x3FFC2160 0x400E3871:0x3FFC2180
+--- 0x400d803a: task_wdt_timeout_handling at /Users/ahmedansari/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d840c: task_wdt_isr at /Users/ahmedansari/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082725: _xt_lowint1 at /Users/ahmedansari/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400d5dab: algorithm_fault_infinite_loop at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:746
+--- 0x400d60ea: run_algorithm_task at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:1045
+--- 0x400e3871: vPortTaskWrapper at /Users/ahmedansari/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:143
+
+E (11439) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (11439) task_wdt:  - IDLE0 (CPU 0)
+E (11439) task_wdt: Tasks currently running:
+E (11439) task_wdt: CPU 0: control algorit
+E (11439) task_wdt: CPU 1: IDLE1
+E (11439) task_wdt: Print CPU 0 (current core) backtrace
+
+
+Backtrace: 0x400D803A:0x3FFB10C0 0x400D840C:0x3FFB10E0 0x40082725:0x3FFB1110 0x400D5DAB:0x3FFC2130 0x400D60EA:0x3FFC2160 0x400E3871:0x3FFC2180
+--- 0x400d803a: task_wdt_timeout_handling at /Users/ahmedansari/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d840c: task_wdt_isr at /Users/ahmedansari/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082725: _xt_lowint1 at /Users/ahmedansari/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400d5dab: algorithm_fault_infinite_loop at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:746
+--- 0x400d60ea: run_algorithm_task at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:1045
+--- 0x400e3871: vPortTaskWrapper at /Users/ahmedansari/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:143

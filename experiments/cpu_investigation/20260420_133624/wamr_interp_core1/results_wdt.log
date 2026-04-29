@@ -1,0 +1,7 @@
+991,,101000,77,126,115,,39.33,13E (108948) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (108948) task_wdt:  - IDLE1 (CPU 1)
+E (108948) task_wdt: Tasks currently running:
+E (108948) task_wdt: CPU 0: IDLE0
+E (108948) task_wdt: CPU 1: WASM Runtime
+E (108948) task_wdt: Print CPU 1 backtrace
+

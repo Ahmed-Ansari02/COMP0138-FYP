@@ -1,0 +1,11 @@
+method,metric,value
+shared_memory,min_cycles,25
+shared_memory,max_cycles,1245
+shared_memory,mean_cycles,25.2
+shared_memory,p50_cycles,25
+shared_memory,p95_cycles,25
+shared_memory,p99_cycles,25
+shared_memory,free_heap_start,104464
+shared_memory,free_heap_end,104464
+shared_memory,core_mode,same_core
+shared_memory,iterations,10000

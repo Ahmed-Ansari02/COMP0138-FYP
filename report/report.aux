@@ -1,0 +1,486 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{jia2019smartbuildings}
+\citation{wollschlaeger2017future}
+\citation{chikurtev2026esp32}
+\citation{hercog2023esp32}
+\citation{atzori2010iot}
+\citation{eljaouhari2022secure}
+\citation{desimone2025bpatch,bauwens2020ota}
+\citation{zandberg2022femto,dessouky2023pipmpu}
+\citation{dunkels2006runtime,ruizdeazua2024modular}
+\citation{zandberg2022femto}
+\citation{haas2017webassembly}
+\citation{li2022wait,moron2025benchmarking}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation and Problem Statement}{6}{section.1.1}\protected@file@percent }
+\citation{warduino2024}
+\citation{wasm-iot-constrained}
+\citation{moron2025benchmarking}
+\citation{rausch2024cross}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Aims and Objectives}{7}{section.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Project Approach}{8}{section.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Report Structure}{9}{section.1.4}\protected@file@percent }
+\citation{wasm-spec}
+\citation{haas2017bringing}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background and Context}{10}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:background}{{2}{10}{Background and Context}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}WebAssembly}{10}{section.2.1}\protected@file@percent }
+\newlabel{sec:wasm}{{2.1}{10}{WebAssembly}{section.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Origins and Design Goals}{10}{subsection.2.1.1}\protected@file@percent }
+\newlabel{subsec:wasm-origins}{{2.1.1}{10}{Origins and Design Goals}{subsection.2.1.1}{}}
+\citation{wasi-spec}
+\citation{hykes-tweet}
+\citation{wasmedge-comparison}
+\citation{menetrey2022twine,li2022wasm-iot}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}WebAssembly Beyond the Browser}{11}{subsection.2.1.2}\protected@file@percent }
+\newlabel{subsec:wasm-beyond}{{2.1.2}{11}{WebAssembly Beyond the Browser}{subsection.2.1.2}{}}
+\citation{wasi-spec}
+\citation{wasi-sdk}
+\citation{wasmtime}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}WASI and wasi-sdk}{12}{subsection.2.1.3}\protected@file@percent }
+\newlabel{subsec:wasi-sdk}{{2.1.3}{12}{WASI and wasi-sdk}{subsection.2.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}WebAssembly Runtimes}{12}{subsection.2.1.4}\protected@file@percent }
+\newlabel{subsec:wasm-runtimes}{{2.1.4}{12}{WebAssembly Runtimes}{subsection.2.1.4}{}}
+\citation{wasmedge}
+\citation{wasm3}
+\citation{warduino2024}
+\citation{wamr-github}
+\citation{wamr-github,wamr-project-doc}
+\citation{wamr-project-doc}
+\citation{wamr-project-doc}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}WebAssembly Micro Runtime (WAMR)}{13}{section.2.2}\protected@file@percent }
+\newlabel{sec:wamr}{{2.2}{13}{WebAssembly Micro Runtime (WAMR)}{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Project Overview and Architecture}{13}{subsection.2.2.1}\protected@file@percent }
+\newlabel{subsec:wamr-overview}{{2.2.1}{13}{Project Overview and Architecture}{subsection.2.2.1}{}}
+\citation{wamr-project-doc}
+\citation{wamr-project-doc}
+\citation{wamr-project-doc}
+\citation{wamr-memory-model}
+\citation{wamr-memory-model}
+\citation{wamr-memory-model}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Memory Model}{15}{subsection.2.2.2}\protected@file@percent }
+\newlabel{subsec:wamr-memory}{{2.2.2}{15}{Memory Model}{subsection.2.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces WAMR memory layout.}}{15}{figure.caption.4}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:wamr-memory}{{2.1}{15}{WAMR memory layout}{figure.caption.4}{}}
+\citation{wamr-memory-model}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Native Function Interface}{16}{subsection.2.2.3}\protected@file@percent }
+\newlabel{subsec:wamr-host}{{2.2.3}{16}{Native Function Interface}{subsection.2.2.3}{}}
+\citation{wamr-stacks-blog}
+\citation{wamr-stacks-blog}
+\citation{wamr-stacks-blog}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}WAMR Stack Model}{17}{subsection.2.2.4}\protected@file@percent }
+\newlabel{subsec:wamr-stacks}{{2.2.4}{17}{WAMR Stack Model}{subsection.2.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Interpreter-mode WAMR stack transitions.}}{17}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:wamr-interpreter-stacks}{{2.2}{17}{Interpreter-mode WAMR stack transitions}{figure.caption.5}{}}
+\citation{wamr-stacks-blog}
+\citation{wamr-stacks-blog}
+\citation{wamr-running-modes-blog,wamr-running-modes-doc}
+\citation{wamr-running-modes-blog}
+\citation{wamr-running-modes-doc,wamr-fast-interp}
+\citation{wamr-running-modes-blog}
+\citation{wamr-running-modes-doc}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Execution Modes}{18}{subsection.2.2.5}\protected@file@percent }
+\newlabel{subsec:wamr-modes}{{2.2.5}{18}{Execution Modes}{subsection.2.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpreter mode:}{18}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ahead-of-Time (AOT) compilation:}{18}{section*.7}\protected@file@percent }
+\citation{wamr-running-modes-doc}
+\citation{wamr-running-modes-blog}
+\citation{esp32-trm}
+\@writefile{toc}{\contentsline {paragraph}{Just-in-Time (JIT) compilation:}{19}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mode selection rationale:}{19}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}ESP32 Hardware Platform}{19}{section.2.3}\protected@file@percent }
+\newlabel{sec:esp32}{{2.3}{19}{ESP32 Hardware Platform}{section.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Xtensa LX6 Dual-Core Architecture}{19}{subsection.2.3.1}\protected@file@percent }
+\newlabel{subsec:xtensa}{{2.3.1}{19}{Xtensa LX6 Dual-Core Architecture}{subsection.2.3.1}{}}
+\citation{esp32-trm}
+\citation{esp32-trm}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Flash and Execute-in-Place (XIP)}{20}{subsection.2.3.2}\protected@file@percent }
+\newlabel{subsec:esp32-xip}{{2.3.2}{20}{Flash and Execute-in-Place (XIP)}{subsection.2.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}GPIO and Analogue I/O}{20}{subsection.2.3.3}\protected@file@percent }
+\newlabel{subsec:esp32-gpio}{{2.3.3}{20}{GPIO and Analogue I/O}{subsection.2.3.3}{}}
+\citation{spiffs}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces ESP32-DevKitC pinout overview, showing the range of GPIO, ADC, DAC, and peripheral functions exposed by the board.}}{21}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:esp32-pinout}{{2.3}{21}{ESP32-DevKitC pinout overview, showing the range of GPIO, ADC, DAC, and peripheral functions exposed by the board}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}SPI Flash File System (SPIFFS)}{21}{subsection.2.3.4}\protected@file@percent }
+\newlabel{subsec:esp32-spiffs}{{2.3.4}{21}{SPI Flash File System (SPIFFS)}{subsection.2.3.4}{}}
+\citation{freertos-esp}
+\citation{astrom-feedback}
+\citation{freertos-esp}
+\citation{esp-idf-docs,esp-idf-github}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}FreeRTOS}{22}{section.2.4}\protected@file@percent }
+\newlabel{subsec:freertos}{{2.4}{22}{FreeRTOS}{section.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}ESP-IDF Development Framework}{22}{section.2.5}\protected@file@percent }
+\newlabel{subsec:esp-idf}{{2.5}{22}{ESP-IDF Development Framework}{section.2.5}{}}
+\citation{freertos-esp}
+\citation{freertos-esp}
+\citation{astrom-feedback}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Real-Time Control Fundamentals}{23}{section.2.6}\protected@file@percent }
+\newlabel{sec:control}{{2.6}{23}{Real-Time Control Fundamentals}{section.2.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Closed-Loop Control and Timing Requirements}{23}{subsection.2.6.1}\protected@file@percent }
+\newlabel{subsec:closed-loop}{{2.6.1}{23}{Closed-Loop Control and Timing Requirements}{subsection.2.6.1}{}}
+\citation{warduino2024}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Bang-Bang and PID Controllers}{24}{subsection.2.6.2}\protected@file@percent }
+\newlabel{subsec:controllers}{{2.6.2}{24}{Bang-Bang and PID Controllers}{subsection.2.6.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Bang-bang control.}{24}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{PID control.}{24}{section*.12}\protected@file@percent }
+\newlabel{eq:pid}{{2.1}{24}{PID control}{equation.2.1}{}}
+\newlabel{eq:pid-discrete}{{2.2}{24}{PID control}{equation.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Related Works}{24}{section.2.7}\protected@file@percent }
+\newlabel{sec:related}{{2.7}{24}{Related Works}{section.2.7}{}}
+\citation{wasm-iot-constrained}
+\citation{moron2025benchmarking}
+\citation{rausch2024cross}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Design and Implementation}{27}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:design}{{3}{27}{Design and Implementation}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Execution Variants: Native vs WAMR}{27}{section.3.1}\protected@file@percent }
+\newlabel{sec:variants}{{3.1}{27}{Execution Variants: Native vs WAMR}{section.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Native Variant:}{28}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{WAMR Variant:}{28}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}The Testbed}{28}{section.3.2}\protected@file@percent }
+\newlabel{sec:arch-overview}{{3.2}{28}{The Testbed}{section.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Physical testbed and wiring layout.}}{28}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:testbed}{{3.1}{28}{Physical testbed and wiring layout}{figure.caption.15}{}}
+\citation{sealevel-sampling}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Thermal Simulator}{30}{section.3.3}\protected@file@percent }
+\newlabel{sec:simulator}{{3.3}{30}{Thermal Simulator}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Physics Model}{30}{subsection.3.3.1}\protected@file@percent }
+\newlabel{subsec:physics}{{3.3.1}{30}{Physics Model}{subsection.3.3.1}{}}
+\newlabel{eq:physics}{{3.1}{30}{Physics Model}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Simulation Loop}{30}{subsection.3.3.2}\protected@file@percent }
+\newlabel{subsec:sim-loop}{{3.3.2}{30}{Simulation Loop}{subsection.3.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Simulator Reset Mechanism}{31}{subsection.3.3.3}\protected@file@percent }
+\newlabel{subsec:sim-reset}{{3.3.3}{31}{Simulator Reset Mechanism}{subsection.3.3.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}System Tasks}{31}{section.3.4}\protected@file@percent }
+\newlabel{sec:tasks}{{3.4}{31}{System Tasks}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}ADC Reader Task}{31}{subsection.3.4.1}\protected@file@percent }
+\newlabel{subsec:native-reader}{{3.4.1}{31}{ADC Reader Task}{subsection.3.4.1}{}}
+\newlabel{eq:temp_conversion}{{3.2}{31}{ADC Reader Task}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}CPU Usage Task}{32}{subsection.3.4.2}\protected@file@percent }
+\newlabel{subsec:native-cpu}{{3.4.2}{32}{CPU Usage Task}{subsection.3.4.2}{}}
+\newlabel{eq:cpu}{{3.3}{32}{CPU Usage Task}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Metrics Task}{32}{subsection.3.4.3}\protected@file@percent }
+\newlabel{subsec:native-metrics}{{3.4.3}{32}{Metrics Task}{subsection.3.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}WebAssembly Controller}{33}{section.3.5}\protected@file@percent }
+\newlabel{sec:wamr-controller}{{3.5}{33}{WebAssembly Controller}{section.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}WASI-SDK Compilation Instructions}{33}{subsection.3.5.1}\protected@file@percent }
+\newlabel{subsec:wasm-pipeline}{{3.5.1}{33}{WASI-SDK Compilation Instructions}{subsection.3.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}WAMR Initialisation and Module Loading}{33}{subsection.3.5.2}\protected@file@percent }
+\newlabel{subsec:wamr-init}{{3.5.2}{33}{WAMR Initialisation and Module Loading}{subsection.3.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}AOT Compilation Workflow}{34}{subsection.3.5.3}\protected@file@percent }
+\newlabel{subsec:aot-workflow}{{3.5.3}{34}{AOT Compilation Workflow}{subsection.3.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Flash Partition Layout}{35}{subsection.3.5.4}\protected@file@percent }
+\newlabel{subsec:flash-layout}{{3.5.4}{35}{Flash Partition Layout}{subsection.3.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces ESP32 flash partitions used by the WAMR controller firmware.}}{35}{table.caption.16}\protected@file@percent }
+\newlabel{tab:flash-layout}{{3.1}{35}{ESP32 flash partitions used by the WAMR controller firmware}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}WAMR Host Function Interface}{35}{subsection.3.5.5}\protected@file@percent }
+\newlabel{subsec:host-functions-design}{{3.5.5}{35}{WAMR Host Function Interface}{subsection.3.5.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Native Host Function Equivalents}{36}{subsection.3.5.6}\protected@file@percent }
+\newlabel{subsec:native-control}{{3.5.6}{36}{Native Host Function Equivalents}{subsection.3.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.7}Container Configuration}{37}{subsection.3.5.7}\protected@file@percent }
+\newlabel{subsec:container-config}{{3.5.7}{37}{Container Configuration}{subsection.3.5.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Key Design Decisions}{38}{section.3.6}\protected@file@percent }
+\newlabel{sec:design-decisions}{{3.6}{38}{Key Design Decisions}{section.3.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{Analogue signal path:}{38}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Pthread for Wasm execution:}{38}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{System allocator for WAMR:}{38}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Identical task topology:}{38}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Performance Profiling}{39}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:performance_profiling}{{4}{39}{Performance Profiling}{chapter.4}{}}
+\newlabel{ch:evaluation}{{4}{39}{Performance Profiling}{chapter.4}{}}
+\newlabel{ch:wamr}{{4}{39}{Performance Profiling}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Methodology}{39}{section.4.1}\protected@file@percent }
+\newlabel{sec:perf-methodology}{{4.1}{39}{Methodology}{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Execution variants}{39}{subsection.4.1.1}\protected@file@percent }
+\newlabel{subsec:perf-execution-variants}{{4.1.1}{39}{Execution variants}{subsection.4.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Benchmark workloads}{39}{subsection.4.1.2}\protected@file@percent }
+\newlabel{sec:algorithms}{{4.1.2}{39}{Benchmark workloads}{subsection.4.1.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Benchmark workloads and the aspect of runtime behaviour they stress.}}{40}{table.caption.21}\protected@file@percent }
+\newlabel{tab:workload-purpose}{{4.1}{40}{Benchmark workloads and the aspect of runtime behaviour they stress}{table.caption.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Bang-Bang Controller}{40}{section*.22}\protected@file@percent }
+\newlabel{subsec:bang-bang}{{4.1.2}{40}{Bang-Bang Controller}{section*.22}{}}
+\@writefile{toc}{\contentsline {subsubsection}{PID Controller}{40}{section*.23}\protected@file@percent }
+\newlabel{subsec:pid-impl}{{4.1.2}{40}{PID Controller}{section*.23}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Step-Response Algorithm}{40}{section*.24}\protected@file@percent }
+\newlabel{subsec:step-response}{{4.1.2}{40}{Step-Response Algorithm}{section*.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Discrete-time timeline for the end-to-end latency measurement.}}{41}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:e2e-timing-timeline}{{4.1}{41}{Discrete-time timeline for the end-to-end latency measurement}{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Experimental setup}{41}{subsection.4.1.3}\protected@file@percent }
+\newlabel{sec:perf-setup}{{4.1.3}{41}{Experimental setup}{subsection.4.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Data capture pipeline}{42}{subsection.4.1.4}\protected@file@percent }
+\newlabel{subsec:data-pipeline}{{4.1.4}{42}{Data capture pipeline}{subsection.4.1.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Metrics}{42}{section.4.2}\protected@file@percent }
+\newlabel{sec:perf-metrics}{{4.2}{42}{Metrics}{section.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Timing and resource metrics}{42}{subsection.4.2.1}\protected@file@percent }
+\newlabel{subsec:metric-defs}{{4.2.1}{42}{Timing and resource metrics}{subsection.4.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Metrics collected by all execution variants.}}{42}{table.caption.26}\protected@file@percent }
+\newlabel{tab:metrics}{{4.2}{42}{Metrics collected by all execution variants}{table.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Host-function metrics}{43}{subsection.4.2.2}\protected@file@percent }
+\newlabel{subsec:host-function-overhead}{{4.2.2}{43}{Host-function metrics}{subsection.4.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Results}{43}{section.4.3}\protected@file@percent }
+\newlabel{sec:perf-results}{{4.3}{43}{Results}{section.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Control behaviour}{43}{subsection.4.3.1}\protected@file@percent }
+\newlabel{sec:algo-temp-response}{{4.3.1}{43}{Control behaviour}{subsection.4.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Bang-bang controller}{43}{section*.27}\protected@file@percent }
+\newlabel{subsec:bb-response}{{4.3.1}{43}{Bang-bang controller}{section*.27}{}}
+\newlabel{fig:bb-temp-native}{{4.2a}{44}{Native}{figure.caption.28}{}}
+\newlabel{sub@fig:bb-temp-native}{{a}{44}{Native}{figure.caption.28}{}}
+\newlabel{fig:bb-temp-interpreter}{{4.2b}{44}{Interpreter}{figure.caption.28}{}}
+\newlabel{sub@fig:bb-temp-interpreter}{{b}{44}{Interpreter}{figure.caption.28}{}}
+\newlabel{fig:bb-temp-aot}{{4.2c}{44}{AOT}{figure.caption.28}{}}
+\newlabel{sub@fig:bb-temp-aot}{{c}{44}{AOT}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Bang-bang controller temperature response across execution variants.}}{44}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:bb-temp}{{4.2}{44}{Bang-bang controller temperature response across execution variants}{figure.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{PID controller}{44}{section*.29}\protected@file@percent }
+\newlabel{subsec:pid-response}{{4.3.1}{44}{PID controller}{section*.29}{}}
+\newlabel{fig:pid-temp-native}{{4.3a}{44}{Native}{figure.caption.30}{}}
+\newlabel{sub@fig:pid-temp-native}{{a}{44}{Native}{figure.caption.30}{}}
+\newlabel{fig:pid-temp-interpreter}{{4.3b}{44}{Interpreter}{figure.caption.30}{}}
+\newlabel{sub@fig:pid-temp-interpreter}{{b}{44}{Interpreter}{figure.caption.30}{}}
+\newlabel{fig:pid-temp-aot}{{4.3c}{44}{AOT}{figure.caption.30}{}}
+\newlabel{sub@fig:pid-temp-aot}{{c}{44}{AOT}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces PID controller temperature response across execution variants.}}{44}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:pid-temp}{{4.3}{44}{PID controller temperature response across execution variants}{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Step-response algorithm}{44}{section*.31}\protected@file@percent }
+\newlabel{subsec:e2e-response}{{4.3.1}{44}{Step-response algorithm}{section*.31}{}}
+\newlabel{fig:e2e-temp-native}{{4.4a}{45}{Native}{figure.caption.32}{}}
+\newlabel{sub@fig:e2e-temp-native}{{a}{45}{Native}{figure.caption.32}{}}
+\newlabel{fig:e2e-temp-interpreter}{{4.4b}{45}{Interpreter}{figure.caption.32}{}}
+\newlabel{sub@fig:e2e-temp-interpreter}{{b}{45}{Interpreter}{figure.caption.32}{}}
+\newlabel{fig:e2e-temp-aot}{{4.4c}{45}{AOT}{figure.caption.32}{}}
+\newlabel{sub@fig:e2e-temp-aot}{{c}{45}{AOT}{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Step-response temperature profile across execution variants.}}{45}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:e2e-temp}{{4.4}{45}{Step-response temperature profile across execution variants}{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Cross-variant comparison}{45}{section*.33}\protected@file@percent }
+\newlabel{subsec:temp-comparison}{{4.3.1}{45}{Cross-variant comparison}{section*.33}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Temperature response characteristics across execution variants. All algorithms target 40\textdegree C.}}{45}{table.caption.34}\protected@file@percent }
+\newlabel{tab:temp-response}{{4.3}{45}{Temperature response characteristics across execution variants. All algorithms target 40\textdegree C}{table.caption.34}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Execution time overhead}{46}{subsection.4.3.2}\protected@file@percent }
+\newlabel{sec:exec-time}{{4.3.2}{46}{Execution time overhead}{subsection.4.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Total execution time (seconds) by algorithm and execution variant.}}{46}{table.caption.35}\protected@file@percent }
+\newlabel{tab:exec-time}{{4.4}{46}{Total execution time (seconds) by algorithm and execution variant}{table.caption.35}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Loop timing and jitter}{46}{subsection.4.3.3}\protected@file@percent }
+\newlabel{sec:loop-timing}{{4.3.3}{46}{Loop timing and jitter}{subsection.4.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Loop timing statistics (\textmu {}s) for the PID algorithm (configured period: 100,000\,\textmu {}s).}}{47}{table.caption.36}\protected@file@percent }
+\newlabel{tab:loop-timing}{{4.5}{47}{Loop timing statistics (\textmu {}s) for the PID algorithm (configured period: 100,000\,\textmu {}s)}{table.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Host-function call overhead}{47}{subsection.4.3.4}\protected@file@percent }
+\newlabel{sec:host-overhead}{{4.3.4}{47}{Host-function call overhead}{subsection.4.3.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Temperature read overhead}{47}{section*.37}\protected@file@percent }
+\newlabel{subsec:temp-get-overhead}{{4.3.4}{47}{Temperature read overhead}{section*.37}{}}
+\newlabel{tab:temp-get}{{\caption@xref {tab:temp-get}{ on input line 1376}}{48}{Temperature read overhead}{table.caption.38}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces \texttt  {temp\_get\_time\_us} (\textmu {}s) across algorithms and variants. The PID values are representative of steady-state behaviour.}}{48}{table.caption.38}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Heater write overhead}{48}{section*.39}\protected@file@percent }
+\newlabel{subsec:heater-overhead}{{4.3.4}{48}{Heater write overhead}{section*.39}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces \texttt  {heater\_time\_us} (\textmu {}s) for the PID algorithm.}}{48}{table.caption.40}\protected@file@percent }
+\newlabel{tab:heater-time}{{4.7}{48}{\texttt {heater\_time\_us} (\textmu {}s) for the PID algorithm}{table.caption.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Overhead sources}{49}{section*.41}\protected@file@percent }
+\newlabel{subsec:overhead-sources}{{4.3.4}{49}{Overhead sources}{section*.41}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Per-iteration budget}{49}{section*.42}\protected@file@percent }
+\newlabel{subsec:per-iter-budget}{{4.3.4}{49}{Per-iteration budget}{section*.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Memory footprint}{49}{subsection.4.3.5}\protected@file@percent }
+\newlabel{sec:memory}{{4.3.5}{49}{Memory footprint}{subsection.4.3.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Free heap (bytes) during steady-state algorithm execution. Values are constant within each run.}}{49}{table.caption.43}\protected@file@percent }
+\newlabel{tab:free-heap}{{4.8}{49}{Free heap (bytes) during steady-state algorithm execution. Values are constant within each run}{table.caption.43}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Memory breakdown}{50}{section*.44}\protected@file@percent }
+\newlabel{subsec:memory-breakdown}{{4.3.5}{50}{Memory breakdown}{section*.44}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Practical implications}{50}{section*.45}\protected@file@percent }
+\newlabel{subsec:memory-implications}{{4.3.5}{50}{Practical implications}{section*.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}CPU utilisation}{50}{subsection.4.3.6}\protected@file@percent }
+\newlabel{sec:cpu-utilisation}{{4.3.6}{50}{CPU utilisation}{subsection.4.3.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces Mean CPU utilisation (\%) across the control-algorithm sweep.}}{51}{table.caption.46}\protected@file@percent }
+\newlabel{tab:cpu-utilisation-summary}{{4.9}{51}{Mean CPU utilisation (\%) across the control-algorithm sweep}{table.caption.46}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Investigation of Core~1 Overhead}{51}{section*.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.7}End-to-end signal propagation latency}{51}{subsection.4.3.7}\protected@file@percent }
+\newlabel{sec:e2e-latency}{{4.3.7}{51}{End-to-end signal propagation latency}{subsection.4.3.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Measurement methodology}{52}{section*.48}\protected@file@percent }
+\newlabel{subsec:e2e-method}{{4.3.7}{52}{Measurement methodology}{section*.48}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{52}{section*.49}\protected@file@percent }
+\newlabel{subsec:e2e-results}{{4.3.7}{52}{Results}{section*.49}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces Summary of E2E latency (ms) relative to native.}}{53}{table.caption.50}\protected@file@percent }
+\newlabel{tab:e2e-summary}{{4.10}{53}{Summary of E2E latency (ms) relative to native}{table.caption.50}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Interpretation of the WAMR E2E overhead}{53}{section*.51}\protected@file@percent }
+\newlabel{subsec:e2e-analysis}{{4.3.7}{53}{Interpretation of the WAMR E2E overhead}{section*.51}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Discussion}{54}{section.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Fault tolerance tests}{56}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:fault_tolerance}{{5}{56}{Fault tolerance tests}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Fault injection}{56}{section.5.1}\protected@file@percent }
+\newlabel{sec:fault-injection}{{5.1}{56}{Fault injection}{section.5.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Out-of-bounds memory access.}{56}{section*.52}\protected@file@percent }
+\newlabel{lst:fault-oob}{{5.1}{56}{OOB memory access (\texttt {fault\_null\_ptr.c})}{lstlisting.5.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces OOB memory access (\texttt  {fault\_null\_ptr.c}).}}{56}{lstlisting.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Stack overflow.}{56}{section*.53}\protected@file@percent }
+\newlabel{lst:fault-overflow}{{5.2}{57}{Recursive stack overflow (\texttt {fault\_overflow.c})}{lstlisting.5.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Recursive stack overflow (\texttt  {fault\_overflow.c}).}}{57}{lstlisting.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Infinite loop.}{57}{section*.54}\protected@file@percent }
+\newlabel{lst:fault-loop}{{5.3}{57}{Tight loop with no host callback (\texttt {fault\_infinite\_loop.c})}{lstlisting.5.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Tight loop with no host callback (\texttt  {fault\_infinite\_loop.c}).}}{57}{lstlisting.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Metrics}{58}{section.5.2}\protected@file@percent }
+\newlabel{sec:fault-metrics}{{5.2}{58}{Metrics}{section.5.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Results}{59}{section.5.3}\protected@file@percent }
+\newlabel{sec:fault-results}{{5.3}{59}{Results}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Null pointer}{59}{subsection.5.3.1}\protected@file@percent }
+\newlabel{subsec:fault-null}{{5.3.1}{59}{Null pointer}{subsection.5.3.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Null-pointer fault: native vs WAMR.}}{59}{table.caption.55}\protected@file@percent }
+\newlabel{tab:fault-null}{{5.1}{59}{Null-pointer fault: native vs WAMR}{table.caption.55}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Stack overflow}{59}{subsection.5.3.2}\protected@file@percent }
+\newlabel{subsec:fault-overflow}{{5.3.2}{59}{Stack overflow}{subsection.5.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Stack-overflow fault: native vs WAMR.}}{60}{table.caption.56}\protected@file@percent }
+\newlabel{tab:fault-overflow}{{5.2}{60}{Stack-overflow fault: native vs WAMR}{table.caption.56}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Infinite loop}{60}{subsection.5.3.3}\protected@file@percent }
+\newlabel{subsec:fault-loop}{{5.3.3}{60}{Infinite loop}{subsection.5.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Infinite-loop fault: native vs WAMR.}}{60}{table.caption.57}\protected@file@percent }
+\newlabel{tab:fault-loop}{{5.3}{60}{Infinite-loop fault: native vs WAMR}{table.caption.57}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Discussion}{61}{section.5.4}\protected@file@percent }
+\newlabel{sec:fault_tolerance_discussion}{{5.4}{61}{Discussion}{section.5.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Containerization strategies}{62}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:containerization_strategy}{{6}{62}{Containerization strategies}{chapter.6}{}}
+\newlabel{ch:containerization}{{6}{62}{Containerization strategies}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Over-the-air updates}{62}{section.6.1}\protected@file@percent }
+\newlabel{sec:containerization-ota}{{6.1}{62}{Over-the-air updates}{section.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Update methodologies}{62}{subsection.6.1.1}\protected@file@percent }
+\newlabel{subsec:containerization-ota-methods}{{6.1.1}{62}{Update methodologies}{subsection.6.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Metrics}{63}{subsection.6.1.2}\protected@file@percent }
+\newlabel{subsec:containerization-ota-metrics}{{6.1.2}{63}{Metrics}{subsection.6.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Results}{64}{subsection.6.1.3}\protected@file@percent }
+\newlabel{subsec:containerization-ota-results}{{6.1.3}{64}{Results}{subsection.6.1.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Update cost averaged across three runs. Flash time is the duration of the host tool invocation; boot time is the interval from device reset to the first WASM activity marker on the serial log.}}{64}{table.caption.58}\protected@file@percent }
+\newlabel{tab:ota-strategies}{{6.1}{64}{Update cost averaged across three runs. Flash time is the duration of the host tool invocation; boot time is the interval from device reset to the first WASM activity marker on the serial log}{table.caption.58}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Inter-container communication}{64}{section.6.2}\protected@file@percent }
+\newlabel{sec:containerization-ipc}{{6.2}{64}{Inter-container communication}{section.6.2}{}}
+\newlabel{fig:ipc-m0}{{6.1a}{66}{Shared memory}{figure.caption.59}{}}
+\newlabel{sub@fig:ipc-m0}{{a}{66}{Shared memory}{figure.caption.59}{}}
+\newlabel{fig:ipc-m3}{{6.1b}{66}{Queue}{figure.caption.59}{}}
+\newlabel{sub@fig:ipc-m3}{{b}{66}{Queue}{figure.caption.59}{}}
+\newlabel{fig:ipc-m2}{{6.1c}{66}{Stream buffer}{figure.caption.59}{}}
+\newlabel{sub@fig:ipc-m2}{{c}{66}{Stream buffer}{figure.caption.59}{}}
+\newlabel{fig:ipc-m4}{{6.1d}{66}{Host-mediated read}{figure.caption.59}{}}
+\newlabel{sub@fig:ipc-m4}{{d}{66}{Host-mediated read}{figure.caption.59}{}}
+\newlabel{fig:ipc-m5}{{6.1e}{66}{Host-driven invocation}{figure.caption.59}{}}
+\newlabel{sub@fig:ipc-m5}{{e}{66}{Host-driven invocation}{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces IPC architectures evaluated in the containerisation benchmark.}}{66}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:ipc-architectures}{{6.1}{66}{IPC architectures evaluated in the containerisation benchmark}{figure.caption.59}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Metrics}{66}{subsection.6.2.1}\protected@file@percent }
+\newlabel{subsec:containerization-ipc-metrics}{{6.2.1}{66}{Metrics}{subsection.6.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Result}{67}{subsection.6.2.2}\protected@file@percent }
+\newlabel{subsec:containerization-ipc-results}{{6.2.2}{67}{Result}{subsection.6.2.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Per-iteration cost of each IPC architecture at a 52-byte payload, same-core, 10{,}000 iterations. Ratios are computed against the shared-memory mean.}}{67}{table.caption.60}\protected@file@percent }
+\newlabel{tab:ipc-methods-p52}{{6.2}{67}{Per-iteration cost of each IPC architecture at a 52-byte payload, same-core, 10{,}000 iterations. Ratios are computed against the shared-memory mean}{table.caption.60}{}}
+\@writefile{toc}{\contentsline {paragraph}{Shared memory:}{67}{section*.61}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Host-mediated read:}{67}{section*.62}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Queue and stream buffer:}{67}{section*.63}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Host-driven invocation:}{68}{section*.64}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Memory footprint:}{68}{section*.65}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Payload sensitivity}{68}{subsection.6.2.3}\protected@file@percent }
+\newlabel{subsec:containerization-payload}{{6.2.3}{68}{Payload sensitivity}{subsection.6.2.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.3}{\ignorespaces Mean cycles per iteration as a function of payload size. }}{68}{table.caption.66}\protected@file@percent }
+\newlabel{tab:ipc-payload}{{6.3}{68}{Mean cycles per iteration as a function of payload size}{table.caption.66}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Container-count scaling}{68}{section.6.3}\protected@file@percent }
+\newlabel{sec:containerization-scaling}{{6.3}{68}{Container-count scaling}{section.6.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Methodology}{69}{subsection.6.3.1}\protected@file@percent }
+\newlabel{subsec:containerization-scaling-method}{{6.3.1}{69}{Methodology}{subsection.6.3.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces CPU-bound worker kernel used by each container}}{69}{algorithm.1}\protected@file@percent }
+\newlabel{alg:container-worker-kernel}{{1}{69}{CPU-bound worker kernel used by each container}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Results}{70}{subsection.6.3.2}\protected@file@percent }
+\newlabel{subsec:containerization-scaling-results}{{6.3.2}{70}{Results}{subsection.6.3.2}{}}
+\newlabel{fig:container-scaling-heap}{{6.2a}{70}{Heap usage}{figure.caption.67}{}}
+\newlabel{sub@fig:container-scaling-heap}{{a}{70}{Heap usage}{figure.caption.67}{}}
+\newlabel{fig:container-scaling-cpu}{{6.2b}{70}{CPU utilisation}{figure.caption.67}{}}
+\newlabel{sub@fig:container-scaling-cpu}{{b}{70}{CPU utilisation}{figure.caption.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces CPU & heap usage against container count for WAMR on the ESP32.}}{70}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:container-scaling}{{6.2}{70}{CPU & heap usage against container count for WAMR on the ESP32}{figure.caption.67}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Discussion}{71}{section.6.4}\protected@file@percent }
+\newlabel{sec:containerization-discussion}{{6.4}{71}{Discussion}{section.6.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusions}{72}{chapter.7}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:conclusion}{{7}{72}{Conclusions}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Summary of findings}{72}{section.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Limitations}{74}{section.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Future work}{74}{section.7.3}\protected@file@percent }
+\bibstyle{plain}
+\bibdata{references}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Final remarks}{76}{section.7.4}\protected@file@percent }
+\bibcite{astrom-feedback}{1}
+\bibcite{atzori2010iot}{2}
+\bibcite{bauwens2020ota}{3}
+\bibcite{wamr-project-doc}{4}
+\bibcite{wamr-running-modes-doc}{5}
+\bibcite{wasi-spec}{6}
+\bibcite{wasmtime}{7}
+\bibcite{wamr-github}{8}
+\bibcite{chikurtev2026esp32}{9}
+\bibcite{wasi-sdk}{10}
+\bibcite{desimone2025bpatch}{11}
+\bibcite{dessouky2023pipmpu}{12}
+\bibcite{dunkels2006runtime}{13}
+\bibcite{eljaouhari2022secure}{14}
+\bibcite{esp32-trm}{15}
+\bibcite{freertos-esp}{16}
+\bibcite{esp-idf-github}{17}
+\bibcite{esp-idf-docs}{18}
+\bibcite{haas2017webassembly}{19}
+\bibcite{haas2017bringing}{20}
+\bibcite{hercog2023esp32}{21}
+\bibcite{spiffs}{22}
+\bibcite{hykes-tweet}{23}
+\bibcite{jia2019smartbuildings}{24}
+\bibcite{warduino2024}{25}
+\bibcite{li2022wasm-iot}{26}
+\bibcite{li2022wait}{27}
+\bibcite{wamr-running-modes-blog}{28}
+\bibcite{menetrey2022twine}{29}
+\bibcite{moron2025benchmarking}{30}
+\bibcite{rausch2024cross}{31}
+\bibcite{ruizdeazua2024modular}{32}
+\bibcite{sealevel-sampling}{33}
+\bibcite{wasm3}{34}
+\bibcite{wasm-iot-constrained}{35}
+\bibcite{wamr-fast-interp}{36}
+\bibcite{wamr-stacks-blog}{37}
+\bibcite{wamr-memory-model}{38}
+\bibcite{wasmedge-comparison}{39}
+\bibcite{wasmedge}{40}
+\bibcite{wasm-spec}{41}
+\bibcite{wollschlaeger2017future}{42}
+\bibcite{zandberg2022femto}{43}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Supporting Measurements}{81}{appendix.A}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{app:performance-support}{{A}{81}{Supporting Measurements}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Performance profiling supporting measurements}{81}{section.A.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces WAMR Core~1 verification using the dedicated CPU-investigation runs.}}{81}{table.caption.69}\protected@file@percent }
+\newlabel{tab:cpu-instrumentation-check}{{A.1}{81}{WAMR Core~1 verification using the dedicated CPU-investigation runs}{table.caption.69}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Raw E2E latency measurements (ms) for each heating step.}}{81}{table.caption.70}\protected@file@percent }
+\newlabel{tab:e2e-raw}{{A.2}{81}{Raw E2E latency measurements (ms) for each heating step}{table.caption.70}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Container scaling measurements}{82}{section.A.2}\protected@file@percent }
+\newlabel{app:scaling-tables}{{A.2}{82}{Container scaling measurements}{section.A.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.3}{\ignorespaces Interpreter container scaling measurements.}}{82}{table.caption.71}\protected@file@percent }
+\newlabel{tab:scaling-interpreter}{{A.3}{82}{Interpreter container scaling measurements}{table.caption.71}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.4}{\ignorespaces AOT container scaling measurements.}}{82}{table.caption.72}\protected@file@percent }
+\newlabel{tab:scaling-aot}{{A.4}{82}{AOT container scaling measurements}{table.caption.72}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Code Repository}{83}{appendix.B}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{app:code-repository}{{B}{83}{Code Repository}{appendix.B}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Project Plan}{84}{appendix.C}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Interim Report}{87}{appendix.D}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\gdef \@abspage@last{91}

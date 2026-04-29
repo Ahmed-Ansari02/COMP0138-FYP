@@ -1,0 +1,2 @@
+fault_type,pre_fault_iterations,temp_at_fault,heap_at_fault,timestamp_us
+infinite_loop,10,37.15,210052,4076936

@@ -1,0 +1,11 @@
+method,metric,value
+native_to_wasm,min_cycles,418492
+native_to_wasm,max_cycles,525601
+native_to_wasm,mean_cycles,419171.1
+native_to_wasm,p50_cycles,419206
+native_to_wasm,p95_cycles,420316
+native_to_wasm,p99_cycles,420864
+native_to_wasm,free_heap_start,42256
+native_to_wasm,free_heap_end,42256
+native_to_wasm,core_mode,same_core
+native_to_wasm,iterations,10000

@@ -1,0 +1,11 @@
+.claude/
+.codex/
+.gemini/
+CLAUDE.md
+CODEX.md
+GEMINI.md
+
+# ESP-IDF generated output
+**/build/
+**/build_*/
+**/managed_components/

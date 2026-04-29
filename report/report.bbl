@@ -1,0 +1,288 @@
+\begin{thebibliography}{10}
+
+\bibitem{astrom-feedback}
+Karl~Johan \AA{}str{\"o}m and Richard~M. Murray.
+\newblock {\em Feedback Systems: An Introduction for Scientists and Engineers}.
+\newblock Princeton University Press, 2nd edition, 2021.
+
+\bibitem{atzori2010iot}
+Luigi Atzori, Antonio Iera, and Giacomo Morabito.
+\newblock The {Internet} of {Things}: A survey.
+\newblock {\em Computer Networks}, 54(15):2787--2805, 2010.
+
+\bibitem{bauwens2020ota}
+Jan Bauwens, Peter Ruckebusch, Spilios Giannoulis, Ingrid Moerman, and Eli
+  De~Poorter.
+\newblock Over-the-air software updates in the {Internet} of {Things}: An
+  overview of key principles.
+\newblock {\em IEEE Communications Magazine}, 58(2):35--41, 2020.
+
+\bibitem{wamr-project-doc}
+{Bytecode Alliance}.
+\newblock {WAMR} project --- {WAMR} documentation.
+\newblock
+  \url{https://wamr.gitbook.io/document/basics/introduction/wamr_project},
+  2023.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wamr-running-modes-doc}
+{Bytecode Alliance}.
+\newblock {WAMR} running modes --- {WAMR} documentation.
+\newblock
+  \url{https://wamr.gitbook.io/document/wamr-in-practice/tutorial/running-modes},
+  2023.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wasi-spec}
+{Bytecode Alliance}.
+\newblock {WASI}: The {WebAssembly} system interface.
+\newblock \url{https://wasi.dev/}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wasmtime}
+{Bytecode Alliance}.
+\newblock Wasmtime: A fast and secure runtime for {WebAssembly}.
+\newblock \url{https://wasmtime.dev/}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wamr-github}
+{Bytecode Alliance}.
+\newblock {WebAssembly} micro runtime ({WAMR}).
+\newblock \url{https://github.com/bytecodealliance/wasm-micro-runtime}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{chikurtev2026esp32}
+Denis Chikurtev, Boris Karkov, and Elina Blagoeva.
+\newblock An overview of {ESP32} microcontroller application in embedded
+  systems, robotics and {Internet of Things}.
+\newblock In {\em Recent Advances in Computational Intelligence and Information
+  Technologies}. Springer, 2026.
+
+\bibitem{wasi-sdk}
+{WebAssembly}~{WASI-SDK} Contributors.
+\newblock {WASI SDK}.
+\newblock \url{https://github.com/WebAssembly/wasi-sdk}, 2025.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{desimone2025bpatch}
+Andrea De~Simone, Giovanna Turvani, and Fabrizio Riente.
+\newblock Incremental firmware update over-the-air for low-power {IoT} devices
+  over {LoRaWAN}.
+\newblock {\em Internet of Things}, 34:101772, 2025.
+
+\bibitem{dessouky2023pipmpu}
+Nicolas Dejon, Chrystel Bouder, Matthieu Lemerre, and Samia Bouzefrane.
+\newblock From {MMU} to {MPU}: adaptation of the {Pip} kernel to constrained
+  devices.
+\newblock {\em arXiv preprint arXiv:2301.04546}, 2023.
+
+\bibitem{dunkels2006runtime}
+Adam Dunkels, Niclas Finne, Joakim Eriksson, and Thiemo Voigt.
+\newblock Run-time dynamic linking for reprogramming wireless sensor networks.
+\newblock In {\em Proceedings of the 4th International Conference on Embedded
+  Networked Sensor Systems (SenSys '06)}, pages 15--28, 2006.
+
+\bibitem{eljaouhari2022secure}
+Saad El~Jaouhari and Eric Bouvet.
+\newblock Secure firmware {Over-The-Air} updates for {IoT}: Survey, challenges,
+  and discussions.
+\newblock {\em Internet of Things}, 18:100508, 2022.
+
+\bibitem{esp32-trm}
+{Espressif Systems}.
+\newblock {\em {ESP32} Technical Reference Manual}, 2024.
+\newblock Version 5.2. Accessed: 2025-03-01.
+
+\bibitem{freertos-esp}
+{Espressif Systems}.
+\newblock {FreeRTOS} ({SMP}) --- {ESP-IDF} programming guide.
+\newblock
+  \url{https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html},
+  2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{esp-idf-github}
+{Espressif Systems}.
+\newblock {ESP-IDF} on {GitHub}.
+\newblock \url{https://github.com/espressif/esp-idf}, 2025.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{esp-idf-docs}
+{Espressif Systems}.
+\newblock {ESP-IDF} programming guide.
+\newblock \url{https://docs.espressif.com/projects/esp-idf/en/stable/esp32/},
+  2025.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{haas2017webassembly}
+Andreas Haas, Andreas Rossberg, Derek~L. Schuff, Ben~L. Titzer, Dan Gohman,
+  Luke Wagner, Alon Zakai, JF~Bastien, and Michael Holman.
+\newblock Bringing the web up to speed with {WebAssembly}.
+\newblock In {\em Proceedings of the 38th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation}, pages 185--200, 2017.
+
+\bibitem{haas2017bringing}
+Andreas Haas, Andreas Rossberg, Derek~L. Schuff, Ben~L. Titzer, Michael Holman,
+  Dan Gohman, Luke Wagner, Alon Zakai, and JF~Bastien.
+\newblock Bringing the web up to speed with {WebAssembly}.
+\newblock In {\em Proceedings of the 38th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation (PLDI)}, pages 185--200. ACM, 2017.
+
+\bibitem{hercog2023esp32}
+Darko Hercog, Tone Lerher, Mitja Truntič, and Oto Težak.
+\newblock Design and implementation of {ESP32}-based {IoT} devices.
+\newblock {\em Sensors}, 23(15):6739, 2023.
+
+\bibitem{spiffs}
+Peter~Andersson Hjelm.
+\newblock {SPIFFS}: Spi flash file system.
+\newblock \url{https://github.com/pellepl/spiffs}, 2025.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{hykes-tweet}
+Solomon Hykes.
+\newblock Twitter post on {WebAssembly} and {Docker}.
+\newblock \url{https://twitter.com/saborman/status/1111004913222324225}, 2019.
+\newblock ``If WASM+WASI existed in 2008, we wouldn't have needed to create
+  Docker.'' Accessed: 2025-03-01.
+
+\bibitem{jia2019smartbuildings}
+Mengda Jia, Ali Komeily, Yueren Wang, and Ravi~S. Srinivasan.
+\newblock Adopting {Internet} of {Things} for the development of smart
+  buildings: A review of enabling technologies and applications.
+\newblock {\em Automation in Construction}, 101:111--126, 2019.
+
+\bibitem{warduino2024}
+Tom Lauwaerts, Robbert Gurdeep~Singh, and Christophe Scholliers.
+\newblock {WARDuino}: An embedded {WebAssembly} virtual machine.
+\newblock {\em Journal of Computer Languages}, 79:101268, 2024.
+
+\bibitem{li2022wasm-iot}
+Borui Li et~al.
+\newblock Exploring the feasibility of {WebAssembly} for seamless cloud-{IoT}
+  integration.
+\newblock Technical report, 2022.
+\newblock Cited in related Wasm-IoT literature surveys.
+
+\bibitem{li2022wait}
+Borui Li, Hongchang Fan, Yi~Gao, and Wei Dong.
+\newblock Bringing {WebAssembly} to resource-constrained {IoT} devices for
+  seamless device-cloud integration.
+\newblock In {\em Proceedings of the 20th Annual International Conference on
+  Mobile Systems, Applications and Services}, 2022.
+
+\bibitem{wamr-running-modes-blog}
+Tianlong Liang.
+\newblock Introduction to {WAMR} running modes.
+\newblock
+  \url{https://bytecodealliance.github.io/wamr.dev/blog/introduction-to-wamr-running-modes/},
+  2023.
+\newblock Bytecode Alliance blog. Accessed: 2025-03-01.
+
+\bibitem{menetrey2022twine}
+J{\"a}mes M{\'e}n{\'e}trey, Marcelo Pasin, Pascal Felber, and Valerio
+  Schiavoni.
+\newblock {Twine}: An embedded trusted runtime for {WebAssembly}.
+\newblock In {\em 37th IEEE International Conference on Data Engineering
+  (ICDE)}, pages 205--216. IEEE, 2021.
+
+\bibitem{moron2025benchmarking}
+Konrad Moron and Stefan Wallentowitz.
+\newblock Benchmarking {WebAssembly} for embedded systems.
+\newblock {\em ACM Transactions on Architecture and Code Optimization},
+  22(3):83:1--83:21, 2025.
+
+\bibitem{rausch2024cross}
+Thomas Rausch et~al.
+\newblock A cross-architecture evaluation of {WebAssembly} in the cloud-edge
+  continuum.
+\newblock In {\em IEEE International Conference on Cloud Computing (CLOUD)}.
+  IEEE, 2024.
+\newblock Available at:
+  \url{https://orbilu.uni.lu/bitstream/10993/62285/1/A\%20Cross-Architecture\%20Evaluation\%20of\%20WebAssembly.pdf}.
+
+\bibitem{ruizdeazua2024modular}
+Joan~A. Ruiz-de Azua et~al.
+\newblock Over-the-air firmware update in {LoRaWAN} networks: A new
+  module-based approach.
+\newblock {\em Procedia Computer Science}, 2024.
+
+\bibitem{sealevel-sampling}
+{Sealevel Systems}.
+\newblock Determining an effective analog sampling rate.
+\newblock
+  \url{https://www.sealevel.com/support/determining-an-effective-analog-sampling-rate/},
+  2018.
+\newblock Cites Cisco industrial Ethernet latencies of 10--50\,ms. Accessed:
+  2025-03-01.
+
+\bibitem{wasm3}
+Volodymyr Shymanskyy and Steven Massey.
+\newblock wasm3: A high performance {WebAssembly} interpreter.
+\newblock \url{https://github.com/wasm3/wasm3}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wasm-iot-constrained}
+{University of Helsinki researchers}.
+\newblock {WebAssembly} on resource-constrained {IoT} devices: Performance,
+  efficiency, and portability.
+\newblock \url{https://arxiv.org/pdf/2512.00035}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wamr-fast-interp}
+Xin Wang et~al.
+\newblock A fast {WebAssembly} interpreter design in {WASM-Micro-Runtime}.
+\newblock {\em Intel Developer Zone}, 2021.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wamr-stacks-blog}
+Xin Wang and Wenyong Huang.
+\newblock Understand the {WAMR} stacks.
+\newblock
+  \url{https://bytecodealliance.github.io/wamr.dev/blog/understand-the-wamr-stacks/},
+  2023.
+\newblock Bytecode Alliance blog. Accessed: 2025-03-01.
+
+\bibitem{wamr-memory-model}
+Xin Wang and Wenyong Huang.
+\newblock The {WAMR} memory model.
+\newblock
+  \url{https://bytecodealliance.github.io/wamr.dev/blog/the-wamr-memory-model/},
+  2023.
+\newblock Bytecode Alliance blog. Accessed: 2025-03-01.
+
+\bibitem{wasmedge-comparison}
+{WasmEdge Project}.
+\newblock {WasmEdge} --- bring the cloud-native and serverless application
+  paradigms to edge computing.
+\newblock \url{https://wasmedge.org/}, 2024.
+\newblock Claims 100x faster startup than Docker containers. Accessed:
+  2025-03-01.
+
+\bibitem{wasmedge}
+{WasmEdge Project}.
+\newblock {WasmEdge} runtime.
+\newblock \url{https://wasmedge.org/}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wasm-spec}
+{WebAssembly Community Group}.
+\newblock {WebAssembly} specification, version 2.0.
+\newblock \url{https://webassembly.github.io/spec/core/}, 2024.
+\newblock Accessed: 2025-03-01.
+
+\bibitem{wollschlaeger2017future}
+Martin Wollschlaeger, Thilo Sauter, and J{\"u}rgen Jasperneite.
+\newblock The future of industrial communication: Automation networks in the
+  era of the {Internet} of {Things} and {Industry 4.0}.
+\newblock {\em IEEE Industrial Electronics Magazine}, 11(1):17--27, 2017.
+
+\bibitem{zandberg2022femto}
+Koen Zandberg, Emmanuel Baccelli, Shenghao Yuan, Fr{\'e}d{\'e}ric Besson, and
+  Jean-Pierre Talpin.
+\newblock Femto-containers: Lightweight virtualization and fault isolation for
+  small software functions on low-power {IoT} microcontrollers.
+\newblock In {\em Proceedings of the 23rd ACM/IFIP International Middleware
+  Conference}, 2022.
+
+\end{thebibliography}

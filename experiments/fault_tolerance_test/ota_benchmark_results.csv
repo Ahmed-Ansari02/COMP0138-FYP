@@ -1,0 +1,10 @@
+run, strategy       , flash_time_s, boot_time_s, total_update_s, bytes_written
+  1, full_flash     ,       20.227,       0.547,         20.775,       1073264
+  1, spiffs_only    ,        7.082,       0.548,          7.631,        524288
+  1, build_and_flash,       59.662,       0.547,         60.209,       1073264
+  2, full_flash     ,       19.252,       0.547,         19.799,       1073264
+  2, spiffs_only    ,        7.156,       0.547,          7.704,        524288
+  2, build_and_flash,       58.036,       0.547,         58.584,       1073264
+  3, full_flash     ,       19.32 ,       0.547,         19.867,       1073264
+  3, spiffs_only    ,        6.904,       0.547,          7.451,        524288
+  3, build_and_flash,       57.773,       0.548,         58.321,       1073264

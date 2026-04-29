@@ -1,0 +1,11 @@
+method,metric,value
+queue,min_cycles,10052
+queue,max_cycles,1391724
+queue,mean_cycles,49241.1
+queue,p50_cycles,19433
+queue,p95_cycles,288318
+queue,p99_cycles,428928
+queue,free_heap_start,63164
+queue,free_heap_end,63104
+queue,core_mode,same_core
+queue,iterations,10000

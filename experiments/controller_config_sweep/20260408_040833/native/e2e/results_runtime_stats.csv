@@ -1,0 +1,15 @@
+Task            Abs Time      % Time
+control algorit	4821967		4%
+
+IDLE1          	95994001		93%
+
+IDLE0          	97707044		95%
+
+ADC Reader     	181687		<1%
+
+CPU Usage      	6429146		6%
+
+ipc1           	33612		<1%
+
+ipc0           	32806		<1%
+

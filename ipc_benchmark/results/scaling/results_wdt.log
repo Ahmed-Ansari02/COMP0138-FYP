@@ -1,0 +1,7 @@
+E (63028) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (63028) task_wdt:  - IDLE0 (CPU 0)
+E (63028) task_wdt: Tasks currently running:
+E (63028) task_wdt: CPU 0: pthread
+E (63028) task_wdt: CPU 1: pthread
+E (63028) task_wdt: Print CPU 0 (current core) backtrace
+

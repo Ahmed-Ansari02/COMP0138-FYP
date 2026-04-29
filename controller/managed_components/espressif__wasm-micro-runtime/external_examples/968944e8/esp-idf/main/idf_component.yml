@@ -1,5 +1,0 @@
-dependencies:
-  idf:
-    version: '>=5.1'
-  wasm-micro-runtime:
-    version: ^2

@@ -1,0 +1,25 @@
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d5ef9  PS      : 0x00060130  A0      : 0x800d627d  A1      : 0x3ffcccd0  
+--- 0x400d5ef9: algorithm_fault_null_ptr at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:759
+A2      : 0x002ebd80  A3      : 0x00000000  A4      : 0x00060023  A5      : 0x00000000  
+A6      : 0x0000000a  A7      : 0x4214ba2f  A8      : 0x00000000  A9      : 0x0000002a  
+A10     : 0x3f4039dc  A11     : 0x0000000a  A12     : 0x4214ba2f  A13     : 0x00033484  
+A14     : 0xe0000000  A15     : 0x40429745  SAR     : 0x0000001c  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff6  
+--- 0x400014fd: strlen in ROM
+--- 0x4000150d: strlen in ROM
+
+
+Backtrace: 0x400d5ef6:0x3ffcccd0 0x400d627a:0x3ffccd00 0x400e4351:0x3ffccd20
+--- 0x400d5ef6: algorithm_fault_null_ptr at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:759
+--- 0x400d627a: run_algorithm_task at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:1149
+--- 0x400e4351: vPortTaskWrapper at /Users/ahmedansari/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:143
+
+
+
+
+ELF file SHA256: 2713e7d97
+
+Rebooting...

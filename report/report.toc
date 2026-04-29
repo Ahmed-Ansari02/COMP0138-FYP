@@ -1,0 +1,135 @@
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation and Problem Statement}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Aims and Objectives}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Project Approach}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Report Structure}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Background and Context}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}WebAssembly}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Origins and Design Goals}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}WebAssembly Beyond the Browser}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}WASI and wasi-sdk}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}WebAssembly Runtimes}{12}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}WebAssembly Micro Runtime (WAMR)}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Project Overview and Architecture}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Memory Model}{15}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Native Function Interface}{16}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}WAMR Stack Model}{17}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Execution Modes}{18}{subsection.2.2.5}%
+\contentsline {paragraph}{Interpreter mode:}{18}{section*.6}%
+\contentsline {paragraph}{Ahead-of-Time (AOT) compilation:}{18}{section*.7}%
+\contentsline {paragraph}{Just-in-Time (JIT) compilation:}{19}{section*.8}%
+\contentsline {paragraph}{Mode selection rationale:}{19}{section*.9}%
+\contentsline {section}{\numberline {2.3}ESP32 Hardware Platform}{19}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Xtensa LX6 Dual-Core Architecture}{19}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Flash and Execute-in-Place (XIP)}{20}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}GPIO and Analogue I/O}{20}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}SPI Flash File System (SPIFFS)}{21}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}FreeRTOS}{22}{section.2.4}%
+\contentsline {section}{\numberline {2.5}ESP-IDF Development Framework}{22}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Real-Time Control Fundamentals}{23}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Closed-Loop Control and Timing Requirements}{23}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Bang-Bang and PID Controllers}{24}{subsection.2.6.2}%
+\contentsline {paragraph}{Bang-bang control.}{24}{section*.11}%
+\contentsline {paragraph}{PID control.}{24}{section*.12}%
+\contentsline {section}{\numberline {2.7}Related Works}{24}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Design and Implementation}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Execution Variants: Native vs WAMR}{27}{section.3.1}%
+\contentsline {paragraph}{Native Variant:}{28}{section*.13}%
+\contentsline {paragraph}{WAMR Variant:}{28}{section*.14}%
+\contentsline {section}{\numberline {3.2}The Testbed}{28}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Thermal Simulator}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Physics Model}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Simulation Loop}{30}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Simulator Reset Mechanism}{31}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}System Tasks}{31}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}ADC Reader Task}{31}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}CPU Usage Task}{32}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Metrics Task}{32}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}WebAssembly Controller}{33}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}WASI-SDK Compilation Instructions}{33}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}WAMR Initialisation and Module Loading}{33}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}AOT Compilation Workflow}{34}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Flash Partition Layout}{35}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}WAMR Host Function Interface}{35}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Native Host Function Equivalents}{36}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Container Configuration}{37}{subsection.3.5.7}%
+\contentsline {section}{\numberline {3.6}Key Design Decisions}{38}{section.3.6}%
+\contentsline {paragraph}{Analogue signal path:}{38}{section*.17}%
+\contentsline {paragraph}{Pthread for Wasm execution:}{38}{section*.18}%
+\contentsline {paragraph}{System allocator for WAMR:}{38}{section*.19}%
+\contentsline {paragraph}{Identical task topology:}{38}{section*.20}%
+\contentsline {chapter}{\numberline {4}Performance Profiling}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Methodology}{39}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Execution variants}{39}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Benchmark workloads}{39}{subsection.4.1.2}%
+\contentsline {subsubsection}{Bang-Bang Controller}{40}{section*.22}%
+\contentsline {subsubsection}{PID Controller}{40}{section*.23}%
+\contentsline {subsubsection}{Step-Response Algorithm}{40}{section*.24}%
+\contentsline {subsection}{\numberline {4.1.3}Experimental setup}{41}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Data capture pipeline}{42}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Metrics}{42}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Timing and resource metrics}{42}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Host-function metrics}{43}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Results}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Control behaviour}{43}{subsection.4.3.1}%
+\contentsline {subsubsection}{Bang-bang controller}{43}{section*.27}%
+\contentsline {subsubsection}{PID controller}{44}{section*.29}%
+\contentsline {subsubsection}{Step-response algorithm}{44}{section*.31}%
+\contentsline {subsubsection}{Cross-variant comparison}{45}{section*.33}%
+\contentsline {subsection}{\numberline {4.3.2}Execution time overhead}{46}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Loop timing and jitter}{46}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Host-function call overhead}{47}{subsection.4.3.4}%
+\contentsline {subsubsection}{Temperature read overhead}{47}{section*.37}%
+\contentsline {subsubsection}{Heater write overhead}{48}{section*.39}%
+\contentsline {subsubsection}{Overhead sources}{49}{section*.41}%
+\contentsline {subsubsection}{Per-iteration budget}{49}{section*.42}%
+\contentsline {subsection}{\numberline {4.3.5}Memory footprint}{49}{subsection.4.3.5}%
+\contentsline {subsubsection}{Memory breakdown}{50}{section*.44}%
+\contentsline {subsubsection}{Practical implications}{50}{section*.45}%
+\contentsline {subsection}{\numberline {4.3.6}CPU utilisation}{50}{subsection.4.3.6}%
+\contentsline {subsubsection}{Investigation of Core~1 Overhead}{51}{section*.47}%
+\contentsline {subsection}{\numberline {4.3.7}End-to-end signal propagation latency}{51}{subsection.4.3.7}%
+\contentsline {subsubsection}{Measurement methodology}{52}{section*.48}%
+\contentsline {subsubsection}{Results}{52}{section*.49}%
+\contentsline {subsubsection}{Interpretation of the WAMR E2E overhead}{53}{section*.51}%
+\contentsline {section}{\numberline {4.4}Discussion}{54}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Fault tolerance tests}{56}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Fault injection}{56}{section.5.1}%
+\contentsline {paragraph}{Out-of-bounds memory access.}{56}{section*.52}%
+\contentsline {paragraph}{Stack overflow.}{56}{section*.53}%
+\contentsline {paragraph}{Infinite loop.}{57}{section*.54}%
+\contentsline {section}{\numberline {5.2}Metrics}{58}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Results}{59}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Null pointer}{59}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Stack overflow}{59}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Infinite loop}{60}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Discussion}{61}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Containerization strategies}{62}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Over-the-air updates}{62}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Update methodologies}{62}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Metrics}{63}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Results}{64}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Inter-container communication}{64}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Metrics}{66}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Result}{67}{subsection.6.2.2}%
+\contentsline {paragraph}{Shared memory:}{67}{section*.61}%
+\contentsline {paragraph}{Host-mediated read:}{67}{section*.62}%
+\contentsline {paragraph}{Queue and stream buffer:}{67}{section*.63}%
+\contentsline {paragraph}{Host-driven invocation:}{68}{section*.64}%
+\contentsline {paragraph}{Memory footprint:}{68}{section*.65}%
+\contentsline {subsection}{\numberline {6.2.3}Payload sensitivity}{68}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Container-count scaling}{68}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Methodology}{69}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Results}{70}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Discussion}{71}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusions}{72}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary of findings}{72}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Limitations}{74}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future work}{74}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Final remarks}{76}{section.7.4}%
+\contentsline {chapter}{\numberline {A}Supporting Measurements}{81}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Performance profiling supporting measurements}{81}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Container scaling measurements}{82}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Code Repository}{83}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Project Plan}{84}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Interim Report}{87}{appendix.D}%

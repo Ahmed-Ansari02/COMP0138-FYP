@@ -1,0 +1,13 @@
+Task            Abs Time      % Time
+pthread        	30318148		98%
+
+IDLE1          	30638139		99%
+
+IDLE0          	296117		<1%
+
+ipc1           	51447		<1%
+
+main           	27597		<1%
+
+ipc0           	20939		<1%
+

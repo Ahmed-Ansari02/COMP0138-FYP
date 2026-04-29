@@ -1,0 +1,11 @@
+method,metric,value
+host_bridge,min_cycles,16717
+host_bridge,max_cycles,47317
+host_bridge,mean_cycles,16974.8
+host_bridge,p50_cycles,16717
+host_bridge,p95_cycles,17951
+host_bridge,p99_cycles,18645
+host_bridge,free_heap_start,63448
+host_bridge,free_heap_end,63448
+host_bridge,core_mode,same_core
+host_bridge,iterations,10000

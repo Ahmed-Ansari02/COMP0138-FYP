@@ -1,0 +1,30 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces ESP32 flash partitions used by the WAMR controller firmware.}}{38}{table.caption.17}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Metrics collected by both controller variants.}}{44}{table.caption.22}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Temperature response characteristics across execution variants. All algorithms target 40\textdegree C.}}{48}{table.caption.27}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Total execution time (seconds) by algorithm and execution variant.}}{49}{table.caption.28}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Loop timing statistics (\textmu {}s) for the PID algorithm (configured period: 100,000\,\textmu {}s).}}{50}{table.caption.29}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces \texttt {temp\_get\_time\_us} (\textmu {}s) across algorithms and variants. The PID values are representative of steady-state behaviour.}}{51}{table.caption.30}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces \texttt {heater\_time\_us} (\textmu {}s) for the PID algorithm.}}{51}{table.caption.31}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Free heap (bytes) during steady-state algorithm execution. Values are constant within each run.}}{53}{table.caption.32}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Mean CPU utilisation (\%) across the control-algorithm sweep.}}{54}{table.caption.33}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces WAMR Core~1 verification using the dedicated CPU-investigation runs.}}{54}{table.caption.35}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Raw E2E latency measurements (ms) for each heating step.}}{56}{table.caption.36}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Summary of E2E latency (ms) relative to native.}}{56}{table.caption.37}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Null-pointer fault: native vs WAMR.}}{62}{table.caption.41}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Stack-overflow fault: native vs WAMR.}}{63}{table.caption.42}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Infinite-loop fault: native vs WAMR.}}{63}{table.caption.43}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Update cost averaged across three runs. Flash time is the duration of the host tool invocation; boot time is the interval from device reset to the first WASM activity marker on the serial log.}}{67}{table.caption.44}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Per-iteration cost of each IPC architecture at a 52-byte payload, same-core, 10{,}000 iterations. Ratios are computed against the shared-memory mean.}}{72}{table.caption.50}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Mean cycles per iteration as a function of payload size. The byte-copy component is small relative to the per-message setup cost for every architecture tested.}}{73}{table.caption.56}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Interpreter scaling sweep. Heap figures are converted from bytes to kilobytes using decimal units.}}{74}{table.caption.57}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces AOT scaling sweep. Heap figures are converted from bytes to kilobytes using decimal units.}}{75}{table.caption.58}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

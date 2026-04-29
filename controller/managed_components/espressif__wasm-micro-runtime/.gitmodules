@@ -1,3 +1,0 @@
-[submodule "wamr-app-framework"]
-	path = wamr-app-framework
-	url = https://github.com/bytecodealliance/wamr-app-framework.git

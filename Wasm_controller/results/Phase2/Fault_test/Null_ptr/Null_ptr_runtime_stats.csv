@@ -1,0 +1,19 @@
+Task            Abs Time      % Time
+WASM Runtime   	1510173		17%
+
+IDLE1          	7118908		82%
+
+IDLE0          	6531971		76%
+
+ADC Reader     	8797		<1%
+
+WASM WDT       	182		<1%
+
+CPU Usage      	1352255		15%
+
+main           	57703		<1%
+
+ipc1           	101287		1%
+
+ipc0           	20807		<1%
+

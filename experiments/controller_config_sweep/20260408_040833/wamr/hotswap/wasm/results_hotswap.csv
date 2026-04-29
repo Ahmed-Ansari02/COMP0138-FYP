@@ -1,0 +1,2 @@
+swap_index,swap_latency_us,load_time_us,instantiate_time_us,temp_at_swap,temp_after_swap,swap_timestamp_us
+0,61445,30853,100094778,39.58,39.94,102443967

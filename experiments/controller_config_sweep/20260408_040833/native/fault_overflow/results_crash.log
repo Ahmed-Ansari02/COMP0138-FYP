@@ -1,0 +1,29 @@
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400de89f  PS      : 0x00060330  A0      : 0x800dae60  A1      : 0x3ffcc8e0  
+--- 0x400de89f: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:600
+A2      : 0x3ffcce14  A3      : 0x8f8e8d8c  A4      : 0x3ffcc8f0  A5      : 0x3ffccc70  
+A6      : 0x3ffccc50  A7      : 0x0000000c  A8      : 0x8f8e8d8c  A9      : 0x3ffcc8d0  
+A10     : 0x00000001  A11     : 0x3f4096ed  A12     : 0x000000ff  A13     : 0x0000ff00  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000001c  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x8f8e8df0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+--- 0x400014fd: strlen in ROM
+--- 0x4000150d: strlen in ROM
+
+
+Backtrace: 0x400de89c:0x3ffcc8e0 0x400dae5d:0x3ffccc00 0x400891eb:0x3ffccc30 0x400d6030:0x3ffccc90 0x400d62fd:0x3ffccd00 0x400e435d:0x67666564 |<-CORRUPTED
+--- 0x400de89c: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:600
+--- 0x400dae5d: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x400891eb: esp_log_va at /Users/ahmedansari/esp/esp-idf/components/log/src/log.c:43
+--- (inlined by) esp_log at /Users/ahmedansari/esp/esp-idf/components/log/src/log.c:88
+--- 0x400d6030: print_metrics_csv at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:963
+--- 0x400d62fd: run_algorithm_task at /Users/ahmedansari/Projects/UCL/UCL_YEAR_4/FYP/playground/Project code/BENCHMARKING/Native_controller/main/native.c:1160
+--- 0x400e435d: vPortTaskWrapper at /Users/ahmedansari/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:143
+
+
+
+
+ELF file SHA256: 23160449e
+
+Rebooting...

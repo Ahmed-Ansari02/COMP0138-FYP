@@ -1,0 +1,11 @@
+method,metric,value
+stream_buffer,min_cycles,9016
+stream_buffer,max_cycles,1393300
+stream_buffer,mean_cycles,58487.4
+stream_buffer,p50_cycles,20910
+stream_buffer,p95_cycles,345877
+stream_buffer,p99_cycles,460087
+stream_buffer,free_heap_start,63276
+stream_buffer,free_heap_end,63216
+stream_buffer,core_mode,same_core
+stream_buffer,iterations,10000
